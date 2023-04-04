@@ -36,7 +36,9 @@ export const RecipeProvider = ({children}) => {
     }, [isLoading, user])
 
     useEffect(() => {
-        if (pantryRecipes.length !== 0) {
+        if (pantryRecipes === undefined) {
+            console.log(pantryRecipes)
+        } else if (pantryRecipes.length !== 0) {
             setIsRecipeListActive(true)
         } else {
             setIsRecipeListActive(false)
