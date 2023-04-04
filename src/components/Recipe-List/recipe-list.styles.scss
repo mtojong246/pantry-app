@@ -1,0 +1,112 @@
+.recipe-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    gap: 3vh;
+    
+
+    .recipe-list-item-container {
+        width: 94%;
+        border: 5px solid #FAAB78;
+        border-radius: 10px;
+        padding: 0.5vh;
+
+        .recipe-item-title {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Inter', sans-serif;
+
+            .recipe-title-box {
+                width: 60vw;
+            }
+
+            span {
+                font-size: 3.5vh;
+                font-weight: 500;
+                color: #FAAB78;
+            }
+
+            button {
+                height: 4vh;
+                padding: 0 2vw;
+                background-color: #FAAB78;
+                border: 3px solid #FAAB78;
+                border-radius: 5px;
+                color: white;
+                font-size: 1.75vh;
+            }
+
+            button:hover {
+                background-color: white;
+                color: #FAAB78;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.recipe-item-attributes {
+    margin-top: 20px;
+}
+
+.empty-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+
+    p {
+        font-size: 3vh;
+        color: #666666;
+        text-align: center;
+    }
+
+    button {
+        padding: 1.5vh 2vw;
+        font-size: 2.5vh;
+        border-radius: 10px;
+        color: #FAAB78;
+        background-color: white;
+        border: 1px solid #FAAB78;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #FAAB78;
+        color: white;
+    }
+}
+
+.recipe-item-attributes {
+    button {
+        border: none;
+        background-color: white;
+    }
+
+    img {
+        filter: invert(78%) sepia(11%) saturate(2957%) hue-rotate(307deg) brightness(101%) contrast(88%);
+    }
+
+    img:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recipe-item-title {
+
+        button {
+            font-size: 1vh;
+        }
+    }
+
+
+    .empty-message-container {
+        p {
+            font-size: 2.25vh;
+        }
+    }
+}

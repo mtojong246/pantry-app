@@ -1,0 +1,62 @@
+.food-log-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 18px;
+
+    .food-log, .nutrition-details {
+        margin: 5vh 0;
+    }
+
+    .food-log {
+        padding-left: 2vw;
+    }
+
+    .food-log-title {
+        font-family: 'Archivo', sans-serif;
+        font-size: 4vh;
+        font-weight: 600;
+        color: #FAAB78;
+        padding-left: 25px;
+    }
+
+    .nutrition-details-title {
+        font-family: 'Archivo', sans-serif;
+        font-size: 4vh;
+        font-weight: 600;
+        color: #FAAB78;
+    }
+
+}
+
+
+.nutrition-details {
+    grid-row: 1 / span(2);
+    padding-left: 4vw;
+    
+}
+
+.edit-nutrition-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button {
+        margin-left: 20px;
+        padding: 0.75vh 2vw;
+        color: #FAAB78;
+        background-color: white;
+        border: 1px solid #FAAB78;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: #FAAB78;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .food-log-title, .nutrition-details-title {
+        font-size: 3vh;
+    }
+}

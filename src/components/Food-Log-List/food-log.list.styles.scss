@@ -1,0 +1,138 @@
+.food-log-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2.9vh;
+}
+
+.food-log-categories {
+    margin-bottom: 6vh;
+}
+
+.food-category-box {
+    width: 39.2vw;
+    height: 2vh;
+    background-color: #FAAB78;
+    border: 3px solid #FAAB78;
+    font-size: 2.5vh;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    color: #FFDB5A;
+    padding: 1vh 0 1.5vh 1vw;
+}
+
+.add-food-box {
+    width: 40.15vw;
+    border: 1px solid #FAAB78;
+    text-align: right;
+    color: #FAAB78;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    position: relative; 
+    bottom: 1px;
+
+
+    button {
+        padding-bottom: 10px;
+        background-color: white;
+        color: #FAAB78;
+        border: none;
+        font-size: 2vh;
+        font-family: 'Inter', sans-serif;
+        padding: 0.5vh 0.5vw 1vh 0;
+        position: relative;
+        top: 1px;
+    }
+
+    img {
+        height: 2.5vh;
+        width: 2.5vh;
+        margin-left: 0.75vh;
+        filter: invert(69%) sepia(55%) saturate(427%) hue-rotate(333deg) brightness(100%) contrast(97%);
+        position: relative;
+        top: 5px;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .add-food {
+        transition: all 0.1s ease-in-out;
+    }
+
+    button:hover {
+        cursor: pointer;
+
+        img {
+            transform: scale(1.1);
+            filter: invert(91%) sepia(7%) saturate(2013%) hue-rotate(80deg) brightness(98%) contrast(94%);
+        }
+
+        .add-food {
+            transform: scale(1.1);
+            color: #90F1B7;
+        }
+    }
+}
+
+.food-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.food-item {
+    width: 40.15vw;
+    border: 1px solid #FAAB78;
+    padding: 1vh 0.1vw 1vh 0.1vw;
+    font-size: 1.75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2px;
+
+    span {
+        margin-left: 1vw;
+    }
+}
+
+.remove-from-log {
+    margin-right: 1vw;
+}
+
+.remove-from-log:hover {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+#food-item-quantity {
+    background-color: white;
+    border: none;
+    font-size: 1.75vh;
+}
+
+#food-item-quantity:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .food-category-box {
+        font-size: 2vh;
+    }
+
+    .add-food-box {
+        width: 39.9vw;
+
+        button {
+            font-size: 1.5vh;
+        }
+    }
+
+}

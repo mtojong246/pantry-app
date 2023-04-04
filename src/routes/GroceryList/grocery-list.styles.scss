@@ -1,0 +1,122 @@
+.grocery-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 86.2vh;
+}
+
+.outside-grocery-list {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        align-self: flex-start;
+        font-size: 3vh;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 900;
+        color: #FAAB78;
+    }
+
+    .grocery-add-button {
+        padding: 1vh 5vh;
+        margin-top: 5vh;
+        color: white;
+        background-color: #FAAB78;
+        border: 3px solid #FAAB78;
+        border-radius: 20px;
+        font-family: 'Archivo', sans-serif;
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+
+    .grocery-add-button:hover {
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+        background-color: #90F1B7;
+        border-color: #90F1B7;
+        transform: scale(1.1);
+    }
+
+}
+
+
+.inside-grocery-list {
+    margin: 10px 0 25px 0;
+    width: 70vw;
+    height: 50vh;
+    border: 7px solid #FAAB78;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grocery-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: #b9bbbb;
+
+    .carrot {
+        height: 12vh;
+        width: 12vh;
+        transition: all 0.1s ease-in;
+    }
+
+    span {
+        font-family: 'Archivo', sans-serif;
+        font-size: 2.5vh;
+        font-weight: 600;
+        transition: all 0.1s ease-in;
+    }
+
+    
+}
+
+.style {
+    color: #90F1B7;
+    transform: scale(1.1);
+}
+
+
+.list-buttons-container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+
+    button {
+        font-size: 2.25vh;
+        padding: 1.5vh 2vw;
+        border-radius: 15px;
+        border: 3px solid #FAAB78;
+        color: #FAAB78;
+        background-color: white;
+    }
+
+    button:hover {
+        background-color: #FAAB78;
+        color:white;
+        cursor: pointer;
+    }
+
+    button:last-child {
+        color: #90F1B7;
+        border-color: #90F1B7;
+    }
+
+    button:last-child:hover {
+        background-color: #90F1B7;
+        color: white;
+    }
+
+}

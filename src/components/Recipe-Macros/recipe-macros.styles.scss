@@ -1,0 +1,116 @@
+.macros-container {
+    width: 40vw;
+
+    button {
+        margin-top: 4vh;
+        border-radius: 20px;
+        color: #666666;
+        background-color: white;
+        border: 1px solid #666666;
+        font-size: 3vh;
+        padding: 2vh 7vw;
+    }
+
+    button:hover {
+        background-color: #A7F4F4;
+        border-color: #A7F4F4;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    ul {
+        align-self: center;
+        text-align: left;
+        list-style: none;
+        border: 1px solid #666666;
+        color: #666666;
+        padding: 0px 15px;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            padding: 10px 0;
+            border: none;
+            margin: 0;
+        }
+
+        button:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #FAAB78;
+            background-color: white;
+        }
+       
+    }
+}
+
+.macros-servings-container {
+    margin: 4vh 0;
+
+    span {
+        font-size: 2.5vh;
+        font-weight: 400;
+    }
+
+    .servings-icon {
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .servings-icon:hover {
+        cursor: pointer;
+        color: #A7F4F4;
+    }
+}
+
+.macros-levels-container {
+    font-size: 2.75vh;
+}
+
+.macros-level {
+    width: 100%;
+    height: 3.75vh;
+    border: 3px solid #666666;
+    margin: 10px 0;
+    display: flex;
+}
+
+.current-level {
+    height: 100%;
+    width: 0%;
+    background-color: #666666;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.additional-level {
+    height: 100%;
+    width: 0%;
+    background-color: #A7F4F4;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.macros-quantities {
+    text-align: right;
+    
+    span {
+        font-size: 2.75vh;
+        font-weight: 400;
+    }
+}
+
+
+.macros-calories-container {
+    margin-top: 4vh;
+
+    span {
+        font-size: 4vh;
+        color: #666666;
+    }
+}
+

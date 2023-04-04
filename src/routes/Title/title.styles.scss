@@ -1,0 +1,82 @@
+.title-page{
+    height: 100vh;
+    margin: 0;
+    background-color: #FCF9BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.title {
+    font-size: 15vw;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 900;
+    color: #FAAB78;
+    padding-left: 2vh;
+}
+
+.drumstick {
+    font-size: 10vw;
+    margin-left: 5vh;
+}
+
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 1.5s;
+}
+
+.title, .get-started {
+    position: relative;
+    top: 140px;
+}
+
+.get-started, .title-desc {
+    margin-left: 2vh;
+}
+
+
+.get-started {
+    font-size: 2vw;
+    padding: 1.5vw 4vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #FAAB78;
+    border: 3px solid #FAAB78;
+    border-radius: 30px;
+    background-color: #FFECA9;
+    margin-top: 1vh;
+    z-index: 2;
+}
+
+.get-started:hover {
+    background-color: #FAAB78;
+    color: #FFECA9;
+    cursor: pointer;
+}
+
+.title-desc {
+    font-size: 3vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #FAAB78;
+    padding-top: 280px;
+}
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 1s;
+    --animate-delay: 2s;
+}
+
+.animate__animated .animate__tada {
+    --animate-duration: 1s;
+    --animate-delay: 2s;
+}
+

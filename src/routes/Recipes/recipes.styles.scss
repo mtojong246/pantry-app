@@ -1,0 +1,134 @@
+.recipe-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    .recipe-title {
+        font-size: 6vh;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        color: #FAAB78;
+        padding-left: 10px;
+    }
+
+    .favorites-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.25vh 2.25vw;
+        border: 5px solid #F19090;
+        border-radius: 10px;
+        color: #F19090;
+        gap: 1vw;
+        font-size: 4vh;
+        margin-right: 10px;
+
+        span {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 2.5vh;
+            color: #F19090;
+        }
+    }
+
+    .favorites-container:hover {
+        color: white;
+        background-color: #F19090;
+        cursor: pointer;
+
+        span {
+            color: white;
+        }
+    }
+}
+
+.recipe-body-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3vh;
+}
+
+hr {
+    height: 5px;
+    background-color: #FAAB78;
+    border: 1px solid #FAAB78;
+}
+
+.recipe-filter-container {
+    width: 20vw;
+    margin-left: 2vw;
+
+    span {
+        font-family: 'Archivo', sans-serif;
+        font-size: 4vh;
+        font-weight: 900;
+        color: #FAAB78;
+    }
+
+    hr {  
+        margin-bottom: 3vh;
+    }
+}
+
+.recipe-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-bottom: 40px;
+
+    select {
+        height: 5vh;
+        width: 20vw;
+        border: 3px solid #FAAB78;
+        font-size: 2vh;
+        color: #FAAB78;
+        padding-left: 0.75vw;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.75vh;
+    }
+
+    select:hover {
+        cursor: pointer;
+    }
+}
+
+.filter {
+
+    button {
+        font-size: 1.75vh;
+        padding: 1vh 1.5vw;
+        background-color: #FAAB78;
+        color: white;
+        border: none;
+        margin-top: 1vh;
+        transition: all 0.1s ease-in-out;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #90F1B7;
+    }
+}
+
+
+
+.recipe-item-attributes {
+    text-align: right;
+}
+
+
+
+.recipe-body-list {
+    height: 69.6vh;
+    width: 80vw;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+}
+
+.favorite-heart {
+    font-size: 3vh;
+    color: #FAAB78;
+}

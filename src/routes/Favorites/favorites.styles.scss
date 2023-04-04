@@ -1,0 +1,130 @@
+.empty-message-favorites-container {
+    width: 100vw;
+    height: 86.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #939393;
+    font-size: 5vh;
+
+    span {
+        margin-left: 3vh;
+    }
+}
+
+
+.favorites-list-container {
+    width: 100vw;
+    height: 86.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    hr {
+        height: 5px;
+        background-color: #FAAB78;
+        border: 1px solid #FAAB78;
+        width: 100vw;
+        margin-bottom: 2.5vh;
+    }
+}
+
+.favorites-title {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+
+    span {
+        font-size: 7vh;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        color: #FAAB78;
+    }
+
+    select {
+        width: 10vw;
+        font-size: 2.5vh;
+        color: #666666;
+        border-color: #666666;
+    }
+}
+
+.favorite-recipes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 3vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.favorite-recipes {
+    width: 30vw;
+    border: 5px solid #F19090;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite-recipe-title {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    span {
+        font-size: 3vh;
+        color: #F19090;
+        font-weight: 500;
+        width: 25vw;
+    }
+
+    button {
+        font-size: 1.5vh;
+        padding: 0.5vh 1vw;
+        background-color: #F19090;
+        color: white;
+        border: 3px solid #F19090;
+        border-radius: 5px;
+        font-weight: 400;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #F19090;
+    }
+}
+
+.favorite-heart {
+    width: 30vw;
+    text-align: right;
+
+    button {
+        background-color: white;
+        border: none;
+    }
+
+    img {
+        filter: invert(78%) sepia(11%) saturate(2957%) hue-rotate(307deg) brightness(101%) contrast(88%);
+    }
+
+    img:hover {
+        cursor: pointer;
+    }
+}
+
+@media  only screen and (max-width: 768px) {
+    .favorites-title {
+        span {
+            font-size: 6vh;
+        }
+    }
+}

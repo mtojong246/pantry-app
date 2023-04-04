@@ -1,0 +1,48 @@
+.inside-grocery-list-container {
+    height: 48vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #666666;
+    overflow-y: scroll;
+    gap: 1vh;
+
+    hr {
+        border: none;
+        height: 1px;
+        width: 98%;
+        background-color: #666666;
+    }
+}
+
+.grocery-item-container {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    font-size: 2.5vh;
+
+    button {
+        font-size: 2.5vh;
+        color: #666666;
+        border: none;
+        background-color: white;
+    }
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.checkbox:hover, .quantity-button:hover {
+    cursor: pointer;
+}
+
+.delete-grocery-item:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}

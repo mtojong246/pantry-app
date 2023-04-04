@@ -1,0 +1,124 @@
+.nutrition-modal-container, .nutrition-modal-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.nutrition-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nutrition-modal-overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+
+.nutrition-values-container {
+    background: white;
+    border-radius: 10px;
+    width: 45vh;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 2vh;
+    
+}
+
+.nutrition-values-title {
+    background-color: #90F1B7;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.exit-nutrition-modal:hover {
+    cursor: pointer;
+    transition: all 0.1 ease-in-out;
+    transform: scale(1.1)
+}
+
+
+.nutrition-values {
+    text-align: center;
+    width: 90%;
+    padding: 2vh;
+
+    .individual-values {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    
+        span {
+            font-size: 2.5vh;
+        }
+    
+        input {
+            margin-right: 10px;
+            font-size: 2.5vh;
+            width: 48px;
+        }
+    }
+
+    button {
+        font-size: 1.5vh;
+        padding: 1vh 9vw;
+        width: 98%;
+        border: 1px solid #d12e2e;
+        color: #d12e2e;
+        background-color: white;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #d12e2e;
+        color: white;
+    }
+}
+
+.nutrition-values-set {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        font-size: 1.5vh;
+        padding: 1vh 8.3vw;
+        width: 90%;
+        border: 1px solid #90F1B7;
+        color: #90F1B7;
+        background-color: white;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #90F1B7;
+    }
+}
+
+
+
+.popup {
+    animation: popup 300ms ease-in-out forwards;
+}
+
+@keyframes popup {
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }

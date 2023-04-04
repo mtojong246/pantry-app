@@ -1,0 +1,142 @@
+.pantry-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 86.2vh;
+}
+
+.outside-pantry {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    label {
+        align-self: flex-start;
+        font-size: 3vh;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 900;
+        color: #FAAB78;
+    }
+}
+
+.inside-pantry {
+    margin: 10px 0 25px 0;
+    width: 70vw;
+    height: 50vh;
+    border: 7px solid #FAAB78;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add-food {
+    text-align: center;
+    
+
+    img {
+        height: 10vh;
+        width: 10vh;
+        margin-bottom: 10px;
+        filter: invert(69%) sepia(55%) saturate(427%) hue-rotate(333deg) brightness(100%) contrast(97%);
+    }
+
+
+    span {
+        display: block;
+        color: #FAAB78;
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+}
+
+
+.add-food:hover {
+    cursor: pointer;
+
+    img {
+        transform: scale(1.1);
+        filter: invert(91%) sepia(7%) saturate(2013%) hue-rotate(80deg) brightness(98%) contrast(94%);
+        transition: all 0.1s ease-in-out;
+    }
+
+    span {
+        transform: scale(1.1);
+        color: #90F1B7;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+
+.pantry-buttons-container {
+    height: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.25vh;
+    margin-bottom: 5vh;
+
+
+    button {
+        font-size: 2.25vh;
+        padding: 1.5vh 1.5vw;
+        border-radius: 15px;
+        border: 3px solid #FAAB78;
+        color: #FAAB78;
+        background-color: white;
+    }
+
+    button:hover {
+        background-color: #FAAB78;
+        color:white;
+        cursor: pointer;
+    }
+
+    button:last-child {
+        color: #90F1B7;
+        border-color: #90F1B7;
+    }
+
+    button:last-child:hover {
+        background-color: #90F1B7;
+        color: white;
+    }
+
+}
+
+
+.pantry-message {
+    p {
+        font-size: 3vh;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 900;
+        color: #90F1B7;
+        text-align: center;
+        width: 30vw;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 786px) {
+
+
+    .add-food {
+        img {
+            height: 9vh;
+            width: 9vh;
+        }
+
+        span {
+            font-size: 2vh;
+        }
+    }
+
+    .pantry-message {
+        p {
+            font-size: 2.5vh;
+            width: 40vw;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.footer-container {
+    background-color: #FAAB78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.media-container {
+    display: flex;
+    gap: 1vw;
+
+
+    hr {
+        width: 10vw;
+        height: 0px;
+        border: 1px solid white;
+
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand {
+        height: 3vh;
+        width: 3vh;
+        color: white;
+    }
+
+    .brand:hover {
+        color: #90F1B7;
+        cursor: pointer;
+        animation: shakeY;
+        animation-duration: 2s;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .footer-container {
+        width: 103vw;
+    }
+}

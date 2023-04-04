@@ -1,0 +1,75 @@
+.log-quantity-modal-container, .log-quantity-modal-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.log-quantity-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.log-quantity-modal-overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+
+.log-quantity-values-container {
+    background: white;
+    border-radius: 10px;
+    width: 26vw;
+    font-family: 'Inter', sans-serif;
+    height: 20vh;
+    text-align: center;
+
+    button {
+        font-size: 3vh;
+        padding: 1vh 8vw;
+        border-radius: 10px;
+        border: 3px solid #90F1B7;
+        background-color: white;
+        color: #90F1B7;
+    }
+
+    button:hover {
+        background-color: #90F1B7;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.log-quantity-container {
+    width: 92%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    font-size: 4vh;
+    color: #666666;
+
+    input {
+        font-size: 4vh;
+        width: 5vw;
+    }
+}
+
+
+.popup {
+    animation: popup 300ms ease-in-out forwards;
+}
+
+@keyframes popup {
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
