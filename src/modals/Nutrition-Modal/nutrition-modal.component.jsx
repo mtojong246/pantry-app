@@ -19,7 +19,7 @@ const NutritionModal = ({ nutritionModal, toggleNutritionModal }) => {
         
         const formDataObj = {};
         newFormData.forEach((value, key) => (formDataObj[key] = value));
-        const response = await fetch('http://localhost:3080/nutrition-values', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/nutrition-values', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

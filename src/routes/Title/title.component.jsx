@@ -15,7 +15,7 @@ const Title = () => {
 
     useEffect(() => {
         const fetchDatabase = async () => {
-            const response = await fetch('http://localhost:3080/');
+            const response = await fetch('https://still-hollows-61456.herokuapp.com/');
             const data = await response.json();
             console.log(data);
         }

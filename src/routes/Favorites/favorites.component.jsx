@@ -25,7 +25,7 @@ const Favorites = () => {
     }
 
     const setRecipeDetails = async (newItem) => {
-        const response = await fetch('http://localhost:3080/recipe', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/recipe', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -73,7 +73,7 @@ const Favorites = () => {
                 newFavorites = [];
             }
         }
-        const response = await fetch('http://localhost:3080/favorites', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/favorites', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

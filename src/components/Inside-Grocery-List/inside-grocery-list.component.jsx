@@ -23,7 +23,7 @@ const InsideGroceryList = () => {
         } else {
             list = activeList.concat([item]);
         }
-        const response = await fetch('http://localhost:3080/active-list', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/active-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

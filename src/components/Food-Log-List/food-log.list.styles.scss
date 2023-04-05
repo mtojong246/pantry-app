@@ -75,6 +75,11 @@
     }
 }
 
+.move-up {
+    position: relative;
+    bottom: 4px;
+}
+
 .food-item-box {
     display: flex;
     flex-direction: column;

@@ -49,7 +49,7 @@ const Home = () => {
 
     const onClickHandler = async () => {
         clearItemsFromPantry();
-        const response = await fetch('http://localhost:3080/pantry-recipes', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/pantry-recipes', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -68,7 +68,7 @@ const Home = () => {
             return acc.concat(uniqueList);
         }, []);
 
-        const response = await fetch('http://localhost:3080/pantry-recipes', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/pantry-recipes', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

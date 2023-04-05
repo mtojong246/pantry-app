@@ -40,7 +40,7 @@ const RecipeMacros = ({recipe}) => {
             const newArray = prevObj.items.concat([{name: item.recipe.label, category: event.target.value, quantity: Number(servings), calories: Math.floor(item.recipe.totalNutrients['ENERC_KCAL'].quantity), protein: Math.floor(item.recipe.totalNutrients['PROCNT'].quantity), carbs: Math.floor(item.recipe.totalNutrients['CHOCDF'].quantity), fat: Math.floor(item.recipe.totalNutrients['FAT'].quantity) }]);
             let updatedLog = foodLog.map(item => item.category === event.target.value ? {...item, items: newArray} : item)
 
-            const response = await fetch('http://localhost:3080/food-log', {
+            const response = await fetch('https://still-hollows-61456.herokuapp.com/food-log', {
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -53,7 +53,7 @@ const RecipeMacros = ({recipe}) => {
 
             const newQuants = prevQuantities.concat([{name: item.recipe.label, quantity: Number(servings)}])
 
-            const quantResponse = await fetch('http://localhost:3080/prev-quantities', {
+            const quantResponse = await fetch('https://still-hollows-61456.herokuapp.com/prev-quantities', {
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -74,7 +74,7 @@ const RecipeMacros = ({recipe}) => {
             'Fat': logValues[0]['Fat'] + ((Math.floor(item.recipe.totalNutrients['FAT'].quantity))*(Number(servings))),
         }
         
-        const logResponse = await fetch('http://localhost:3080/log-values', {
+        const logResponse = await fetch('https://still-hollows-61456.herokuapp.com/log-values', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

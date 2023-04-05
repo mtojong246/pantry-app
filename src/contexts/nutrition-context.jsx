@@ -110,7 +110,7 @@ export const NutritionProvider = ({children}) => {
     }, [isLoading, user])
 
     const resetValues = async () => {
-        const response = await fetch('http://localhost:3080/nutrition-values', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/nutrition-values', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -125,7 +125,7 @@ export const NutritionProvider = ({children}) => {
     const addItemToLog = async (category, itemToAdd) => {
         const newArray = await addToLog(foodLog, category, itemToAdd);
         const newLog = foodLog.map(foodCategory => foodCategory.category === category ? {...foodCategory, items: newArray} : foodCategory);
-        const response = await fetch('http://localhost:3080/food-log', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/food-log', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -140,7 +140,7 @@ export const NutritionProvider = ({children}) => {
     const removeItemFromLog = async (category, item) => {
         const newArray = removeFromLog(foodLog, category, item);
         const newLog = foodLog.map(foodCategory => foodCategory.category === category ? {...foodCategory, items: newArray} : foodCategory);
-        const response = await fetch('http://localhost:3080/food-log', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/food-log', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

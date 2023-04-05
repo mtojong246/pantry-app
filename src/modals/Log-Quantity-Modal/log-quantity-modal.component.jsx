@@ -20,7 +20,7 @@ const LogQuantityModal = ({quantityModal, toggleQuantityModal, itemObject}) => {
 
         updateNutritionInfo(input);
 
-        const response = await fetch('http://localhost:3080/food-log', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/food-log', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -41,7 +41,7 @@ const LogQuantityModal = ({quantityModal, toggleQuantityModal, itemObject}) => {
             'Fat': (Number(input)*itemObject.fat) + Math.abs(logValues[0]['Fat'] - (prevQuant.quantity*itemObject.fat)),
         }
 
-        const logResponse = await fetch('http://localhost:3080/log-values', {
+        const logResponse = await fetch('https://still-hollows-61456.herokuapp.com/log-values', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -54,7 +54,7 @@ const LogQuantityModal = ({quantityModal, toggleQuantityModal, itemObject}) => {
 
         const updatedQuants = prevQuantities.map(prev => prev.name === itemObject.name ? {...prev, quantity: Number(input)} : prev);
         
-        const quantResponse = await fetch('http://localhost:3080/prev-quantities', {
+        const quantResponse = await fetch('https://still-hollows-61456.herokuapp.com/prev-quantities', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

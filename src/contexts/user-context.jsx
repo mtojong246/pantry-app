@@ -24,13 +24,14 @@ export const UserProvider = ({children}) => {
     const [ user, setUser ] = useState(defaultUser);
     const [ isLoading, setIsLoading ] = useState(true);
 
+    console.log(user);
 
     useEffect(() => {
         const loadUser = async () => {
             const email = JSON.parse(localStorage.getItem('user'));
 
             if (email !== null) {
-                const response = await fetch('http://localhost:3080/load-user', {
+                const response = await fetch('https://still-hollows-61456.herokuapp.com/load-user', {
                     method: 'post',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
@@ -38,8 +39,10 @@ export const UserProvider = ({children}) => {
                     })
                 })
                 const existingUser = await response.json();
-                setUser(existingUser)
-                setIsLoading(false);
+                if (typeof existingUser === 'object') {
+                    setUser(existingUser)
+                    setIsLoading(false);
+                }
             } else {
                 setUser(defaultUser);
                 setIsLoading(false);

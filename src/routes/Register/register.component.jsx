@@ -32,7 +32,7 @@ const Register = () => {
     }
 
     const onClickHandler = async () => {
-        const response = await fetch('http://localhost:3080/register', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

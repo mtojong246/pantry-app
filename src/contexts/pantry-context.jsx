@@ -42,7 +42,9 @@ export const PantryProvider = ({children}) => {
 
 
     useEffect(() => {
-        if (pantryItems.length !== 0) {
+        if (pantryItems === undefined) {
+            console.log(pantryItems)
+        } else if (pantryItems.length !== 0) {
             setIsPantryActive(true)
         } else {
             setIsPantryActive(false)
@@ -51,7 +53,7 @@ export const PantryProvider = ({children}) => {
 
     const addItemToPantry = async (itemToAdd) => {
         const addedItem = addPantryItem(pantryItems, itemToAdd);
-        const response = await fetch('http://localhost:3080/pantry-items', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/pantry-items', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -66,7 +68,7 @@ export const PantryProvider = ({children}) => {
 
     const removeItemFromPantry = async (itemToRemove) => {
         const removedItem = removePantryItem(pantryItems, itemToRemove);
-        const response = await fetch('http://localhost:3080/pantry-items', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/pantry-items', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -79,7 +81,7 @@ export const PantryProvider = ({children}) => {
     }
 
     const clearItemsFromPantry = async () => {
-        const response = await fetch('http://localhost:3080/pantry-items', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/pantry-items', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

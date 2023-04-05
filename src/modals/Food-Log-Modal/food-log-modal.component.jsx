@@ -41,7 +41,7 @@ const FoodLogModal = ({ foodLogModal, toggleFoodLogModal }) => {
             'Fat': logValues[0]['Fat'] + Math.floor(data.parsed[0].food.nutrients['FAT']),
         }
 
-        const logResponse = await fetch('http://localhost:3080/log-values', {
+        const logResponse = await fetch('https://still-hollows-61456.herokuapp.com/log-values', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -54,7 +54,7 @@ const FoodLogModal = ({ foodLogModal, toggleFoodLogModal }) => {
 
         const newQuants = prevQuantities.concat([{name: newResult, quantity: 1}])
         
-        const quantResponse = await fetch('http://localhost:3080/prev-quantities', {
+        const quantResponse = await fetch('https://still-hollows-61456.herokuapp.com/prev-quantities', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

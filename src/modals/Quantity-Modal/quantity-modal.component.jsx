@@ -15,7 +15,7 @@ const QuantityModal = ({ quantityModal, toggleQuantityModal, itemObject }) => {
 
     const onClickHandler= async (input) => {
         const updatedItems = groceryItems.map(item => item.name === itemObject.name ? {...item, quantity: Number(input)} : item)
-        const response = await fetch('http://localhost:3080/grocery-list', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/grocery-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -25,6 +25,7 @@ const QuantityModal = ({ quantityModal, toggleQuantityModal, itemObject }) => {
         })
         const data = await response.json();
         setGroceryItems(data);
+        toggleQuantityModal();
     }
 
 

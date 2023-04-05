@@ -35,7 +35,7 @@ const FoodLogList = () => {
             'Fat': logValues[0]['Fat'] - (result.quantity*result.fat),
         }
 
-        const response = await fetch('http://localhost:3080/log-values', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/log-values', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -48,7 +48,7 @@ const FoodLogList = () => {
 
         const updatedQuants = prevQuantities.filter(prev => prev.name !== result.name);
 
-        const quantResponse = await fetch('http://localhost:3080/prev-quantities', {
+        const quantResponse = await fetch('https://still-hollows-61456.herokuapp.com/prev-quantities', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -89,7 +89,7 @@ const FoodLogList = () => {
                                             </div>
                                         ))}
                                     </div>
-                                    <div className='add-food-box'>
+                                    <div className='add-food-box move-up'>
                                         <button onClick={onClickHandler} value={categories.category}>
                                             <span className='add-food'>Add more</span><img src={PlusCircle} alt='plus' />
                                         </button>

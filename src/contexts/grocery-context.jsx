@@ -47,7 +47,9 @@ export const GroceryProvider = ({children}) => {
     }, [isLoading, user])
 
     useEffect(() => {
-        if (groceryItems.length !== 0) {
+        if (groceryItems === undefined) {
+            console.log(groceryItems)
+        } else if (groceryItems.length !== 0) {
             setIsListActive(true)
         } else {
             setIsListActive(false)
@@ -56,7 +58,7 @@ export const GroceryProvider = ({children}) => {
 
     const addItemToGroceries = async (itemToAdd) => {
         const addedItem = addGroceryItem(groceryItems, itemToAdd);
-        const response = await fetch('http://localhost:3080/grocery-list', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/grocery-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -70,7 +72,7 @@ export const GroceryProvider = ({children}) => {
 
     const removeItemFromGroceries = async (itemToRemove) => {
         const removedItem = removeGroceryItem(groceryItems, itemToRemove);
-        const response = await fetch('http://localhost:3080/grocery-list', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/grocery-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -83,7 +85,7 @@ export const GroceryProvider = ({children}) => {
 
         const list = activeList.filter(activeItem => activeItem !== itemToRemove);
 
-        const listResponse = await fetch('http://localhost:3080/active-list', {
+        const listResponse = await fetch('https://still-hollows-61456.herokuapp.com/active-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -96,7 +98,7 @@ export const GroceryProvider = ({children}) => {
     }
 
     const clearItemsFromGroceries = async () => {
-        const response = await fetch('http://localhost:3080/grocery-list', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/grocery-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -107,7 +109,7 @@ export const GroceryProvider = ({children}) => {
         const data = await response.json();
         setGroceryItems(data);
 
-        const listResponse = await fetch('http://localhost:3080/active-list', {
+        const listResponse = await fetch('https://still-hollows-61456.herokuapp.com/active-list', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

@@ -26,7 +26,7 @@ const Login = () => {
     }
 
     const onClickHandler = async () => {
-        const response = await fetch('http://localhost:3080/login', {
+        const response = await fetch('https://still-hollows-61456.herokuapp.com/login', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
