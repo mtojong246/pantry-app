@@ -1,7 +1,7 @@
 {
   "name": "pantry",
   "version": "0.1.0",
-  "homepage": "https://mtojong246.github.io/pantry",
+  "homepage": "https://mtojong246.github.io/pantry-app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
