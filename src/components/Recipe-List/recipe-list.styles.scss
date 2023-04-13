@@ -110,3 +110,53 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .recipe-list-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        width: 76vw;
+        
+    
+        .recipe-list-item-container {
+            width: 100%;
+
+            .recipe-item-title {   
+                span {
+                    font-size: 8vw;
+                }
+    
+                button {
+                    height: 6vh;
+                    padding: 0 4vw;
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+    
+    
+    .empty-message-container {
+        width: 70vw;
+    
+        p {
+            font-size: 8vw;
+        }
+    
+        button {
+            padding: 3vw 4vw;
+            font-size: 8vw;
+        }
+    }
+
+    .recipe-item-attributes {    
+        img {
+            height: 10vw;
+            width: 10vw;
+        }
+    }
+    
+}

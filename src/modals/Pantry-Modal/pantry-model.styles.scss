@@ -161,3 +161,76 @@
 .disabled {
     background-color: #90F1B7;
 }
+
+@media screen and (max-width: 480px) {
+    .pantry-modal-container, .pantry-modal-overlay {
+        height: 100%;
+    }
+
+    
+    .pantry-search-container {
+        width: 90vw;
+        height: 70vh;
+    }
+    
+    .pantry-search-title {
+    
+        span {
+            padding: 2vh;
+            font-size: 10vw;
+        }
+    
+        .exit-pantry {
+            height: 10vw;
+            width: 10vw;
+            padding-right: 2vh;
+        }
+
+    }
+    
+    .pantry-search-bar {
+        margin-top: 3vh;
+        gap: 2vw;
+    
+        button {
+    
+            .pantry-search-button {
+                height: 7vw;
+                width: 7vw;
+                padding: 1vh;
+            }
+        }
+    
+        input {
+            width: 60vw;
+            height: 6vh;
+            font-size: 8vw;
+        }
+    }
+    
+    
+    .pantry-search-results-container {
+        margin-top: 3vh;
+        height: 35vh;
+    
+        .pantry-search-results-box {
+            gap: 5vh;
+            
+        }
+    
+        .pantry-search-results {
+            width: 76vw;
+            padding: 15px;
+    
+            span {
+                font-size: 8vw;
+            }
+            
+            button {
+                font-size: 5vw;
+                padding: 2vw 5vw;
+            }
+
+        }
+    }
+}

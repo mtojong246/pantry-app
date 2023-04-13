@@ -33,25 +33,23 @@ const Navigation = () => {
     }
 
     return (
-        <>
-            <>
-                <div className='nav-bar-container'>
-                    <span className='logo' onClick={home}>Pantry.</span>
-                    <div className='nav-bar'>
-                        <span onClick={recipes}>Recipes</span>
-                        <span onClick={groceryList}>Grocery List</span>
-                        <span onClick={foodLog}>Food Log</span>
-                    </div>
-                    <FontAwesomeIcon icon={faGear} className='gear' onClick={toggleDropdown}/>
-                    <FontAwesomeIcon icon={faBars} className='bars' onClick={toggleDropdown}/>
+        <div className='page-container'>
+            <div className='nav-bar-container'>
+                <span className='logo' onClick={home}>Pantry.</span>
+                <div className='nav-bar'>
+                    <span onClick={recipes}>Recipes</span>
+                    <span onClick={groceryList}>Grocery List</span>
+                    <span onClick={foodLog}>Food Log</span>
                 </div>
-                <div className={`settings animate__animated ${isDropdownOpen ? "animate__slideInRight" : "animate__slideOutRight"}`}>
-                    <Settings />
-                </div>
-            </>
+                <FontAwesomeIcon icon={faGear} className='gear' onClick={toggleDropdown}/>
+                <FontAwesomeIcon icon={faBars} className='bars' onClick={toggleDropdown}/>
+            </div>
+            <div className={`settings animate__animated ${isDropdownOpen ? "animate__slideInRight" : "animate__slideOutRight"}`}>
+                <Settings />
+            </div>
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
 

@@ -141,3 +141,61 @@
     }
 
 }
+
+@media only screen and (max-width: 480px) {
+    .food-log-list-container {
+        margin-bottom: 0;
+        width: 85vw;
+    }
+    
+    .food-category-box {
+        width: 85.2vw;
+        font-size: 8vw;
+        padding: 3vw;
+        height: 9vw;
+        border: none;
+    }
+    
+    .add-food-box {
+        width: 85vw;
+        border: 1px solid #FAAB78;
+        text-align: right;
+        color: #FAAB78;
+        padding: 3vw;
+        position: relative; 
+        bottom: 2px;
+        margin-right: 0;
+    
+    
+        button {
+            padding-bottom: 10px;
+            background-color: white;
+            color: #FAAB78;
+            border: none;
+            font-size: 8vw;
+            font-family: 'Inter', sans-serif;
+            padding: 0.5vh 0.5vw 1vh 0;
+            position: relative;
+            top: 1px;
+        }
+    
+        img {
+            height: 8vw;
+            width: 8vw;
+        }
+
+    }
+    
+    .food-item {
+        width: 85vw;
+        padding: 3vw;
+        font-size: 8vw;
+    }
+    
+    
+    #food-item-quantity {
+        font-size: 8vw;
+    }
+    
+    
+}

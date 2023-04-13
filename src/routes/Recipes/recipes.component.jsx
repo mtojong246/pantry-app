@@ -41,7 +41,7 @@ const Recipes = () => {
     
 
     return (
-        <>
+        <div className='main-recipe-page-container'>
             <div className='recipe-title-container'>
                 <span className='recipe-title'>Recipes</span>
                 <Link to='/profile/favorites' style={{textDecoration: 'none'}}>
@@ -51,7 +51,7 @@ const Recipes = () => {
                     </div>
                 </Link>
             </div>
-            <hr />
+            <hr className='recipe-page-border'/>
             <div className='recipe-body-container'>
                 <div className='recipe-filter-container'>
                     <span>Filter</span>
@@ -99,7 +99,7 @@ const Recipes = () => {
                     <RecipeList />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

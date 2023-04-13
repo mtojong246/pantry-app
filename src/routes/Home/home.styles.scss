@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 86.2vh;
 }
 
 .outside-pantry {
@@ -70,7 +69,6 @@
 
 
 .pantry-buttons-container {
-    height: 107px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,4 +137,70 @@
             width: 40vw;
         }
     }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .outside-pantry {
+        margin: 10vw;
+    
+        label {
+            font-size: 10vw;
+        }
+    }
+    
+    .inside-pantry {
+        margin: 10px 0 25px 0;
+        width: 70vw;
+        height: 50vh;
+        border: 7px solid #FAAB78;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .add-food {
+        
+    
+        img {
+            height: 30vw;
+            width: 30vw;
+        }
+    
+    
+        span {
+            font-size: 8vw;
+        }
+    }
+       
+    
+    .pantry-buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        margin-bottom: 5vh;
+    
+    
+        button {
+            font-size: 7vw;
+        }
+    
+    }
+    
+    
+    .pantry-message {
+        p {
+            font-size: 3vh;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 900;
+            color: #90F1B7;
+            text-align: center;
+            width: 80vw;
+            margin-bottom: 4vw;
+        }
+    }
+    
 }

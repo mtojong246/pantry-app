@@ -1,9 +1,23 @@
+.main-recipe-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    padding: 1vw;
+
+    hr {
+        height: 1px;
+        background-color: #FAAB78;
+        border: 1px solid #FAAB78;
+        width: 100%;
+    }
+}
+
 .recipe-title-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
 
     .recipe-title {
         font-size: 6vh;
@@ -46,20 +60,18 @@
 
 .recipe-body-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 3vh;
+    gap: 3vw;
 }
 
-hr {
-    height: 5px;
-    background-color: #FAAB78;
-    border: 1px solid #FAAB78;
-}
+
+
 
 .recipe-filter-container {
     width: 20vw;
-    margin-left: 2vw;
+    
 
     span {
         font-family: 'Archivo', sans-serif;
@@ -70,6 +82,10 @@ hr {
 
     hr {  
         margin-bottom: 3vh;
+        height: 1px;
+        background-color: #FAAB78;
+        border: 1px solid #FAAB78;
+        width: 100%;
     }
 }
 
@@ -122,8 +138,8 @@ hr {
 
 
 .recipe-body-list {
-    height: 69.6vh;
-    width: 80vw;
+    height: 65vh;
+    width: 70vw;
     margin-bottom: 3.8vh;
     overflow-y: scroll;
 }
@@ -131,4 +147,82 @@ hr {
 .favorite-heart {
     font-size: 3vh;
     color: #FAAB78;
+}
+
+@media screen and (max-width: 480px) {
+   
+    .recipe-title-container {
+        width: 100%;
+        padding: 2vw;
+
+    
+        .recipe-title {
+            font-size: 15vw;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #FAAB78;
+            padding-left: 10px;
+        }
+    
+        .favorites-container {
+            padding: 4vw;
+    
+            span {
+                display: none;
+            }
+        }
+    
+    }
+    
+    .recipe-body-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    
+    .recipe-filter-container {
+        width: 90vw;
+        
+    
+        span {
+            font-size: 10vw;
+        }
+    
+    }
+    
+    .recipe-filters {
+        display: flex;
+        flex-direction: column;
+        gap: 20vw;
+        margin: 10vw 0;
+    
+        select {
+            width: 100%;
+            height: 8vh;
+            padding-left: 3vw;
+            font-size: 5vw;
+        }
+    
+    }
+    
+    .filter {
+    
+        button {
+            font-size: 5vw;
+            padding: 3vw 6vw;
+            margin-top: 5vw;
+        }
+
+    } 
+    
+    
+    .recipe-body-list {
+        height: 75vh;
+        width: 80vw;
+        margin-bottom: 3.8vh;
+        overflow-y: scroll;
+    }
 }

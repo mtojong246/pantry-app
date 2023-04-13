@@ -41,3 +41,30 @@
     }
 }
 
+
+@media screen and (max-width: 480px) {
+    .inside-pantry-container {
+    
+        .pantry-items {
+            padding: 2vw 4vw;
+    
+            span {
+                font-size: 8vw;
+            }
+    
+            .delete-pantry-item {
+                font-size: 8vw;
+                margin-left: 2vw;
+            }
+    
+            .delete-pantry-item:hover {
+                transform: scale(1.1);
+                color: #90F1B7;
+                cursor: pointer;
+            }
+            
+    
+    
+        }
+    }
+}

@@ -1,10 +1,15 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-bar-container {
     background-color: #FFDCA9;
     color: #FAAB78;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 1vh 0;
     height: 6vh;
 }
 
@@ -80,6 +85,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    top: 6vh;
 }
 
 @media only screen and (max-width: 786px) {
@@ -99,9 +105,31 @@
 
     .bars {
         display: block;
+        height: 12vw;
+        width: 12vw;
     }
 
     .gear {
         display: none;
+    }
+
+    .nav-bar-container {
+        padding: 8vw 0;
+    }
+    
+    .logo {
+        font-size: 18vw;
+    }
+    
+    .logo:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        color: #90F1B7;
+    }
+    
+    
+    .settings {
+        top: 13vh;
+        z-index: 1;
     }
 }

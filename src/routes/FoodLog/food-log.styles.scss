@@ -1,14 +1,12 @@
 .food-log-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 0.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+
 
     .food-log, .nutrition-details {
-        margin: 5vh 0;
-    }
-
-    .food-log {
-        padding-left: 2vw;
+        margin-top: 3.7vw;
     }
 
     .food-log-title {
@@ -16,7 +14,7 @@
         font-size: 4vh;
         font-weight: 600;
         color: #FAAB78;
-        padding-left: 25px;
+ 
     }
 
     .nutrition-details-title {
@@ -55,8 +53,31 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .food-log-title, .nutrition-details-title {
-        font-size: 3vh;
+@media only screen and (max-width: 480px) {
+    .food-log-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vw;
+        margin: 10vw 0;
+        
+
+    
+        .food-log-title {
+            font-size: 15vw;   
+        }
+    
+        .nutrition-details-title {
+            font-size: 15vw;
+        }
+    
+    }
+    
+    .edit-nutrition-details {
+        button {
+            padding: 0.75vh 3vw;
+            font-size: 5vw;
+        }   
     }
 }

@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 86.2vh;
 }
 
 .outside-grocery-list {
@@ -87,11 +86,11 @@
 
 
 .list-buttons-container {
-    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3vw;
+    margin-bottom: 5vh;
 
 
     button {
@@ -119,4 +118,70 @@
         color: white;
     }
 
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .outside-grocery-list {
+        margin: 10vw;
+    
+        label {
+            font-size: 10vw;
+        }
+    
+        .grocery-add-button {
+            padding: 2vh 5vh;
+            margin-top: 5vh;
+            margin-bottom: 3vh;
+            font-size: 8vw;
+
+        }
+    
+    }
+    
+    
+    .inside-grocery-list {
+        margin: 10px 0 25px 0;
+        width: 70vw;
+        height: 50vh;
+        border: 7px solid #FAAB78;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grocery-list {
+    
+        .carrot {
+            height: 30vw;
+            width: 30vw;
+        }
+    
+        span {
+            font-size: 6vw;
+        }
+    
+        
+    }
+    
+    .list-buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        margin-bottom: 5vh;
+    
+    
+        button {
+            font-size: 2.25vh;
+            padding: 1.5vh 2vw;
+            border-radius: 15px;
+            border: 3px solid #FAAB78;
+            color: #FAAB78;
+            background-color: white;
+        }
+    
+    }
+    
 }

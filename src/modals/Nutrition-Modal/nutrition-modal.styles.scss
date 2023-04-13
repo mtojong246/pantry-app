@@ -122,3 +122,51 @@
       transform: scale(1);
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .nutrition-modal-container, .nutrition-modal-overlay {
+        height: 100%;
+    }
+   
+    
+    .nutrition-values-container {
+        width: 90vw;
+    }
+    
+    .nutrition-values-title {
+        font-size: 10vw;
+    }
+        
+    
+    .nutrition-values {
+        padding: 2vh;
+    
+        .individual-values {
+            margin-bottom: 30px;
+            gap: 5vh;
+        
+            span {
+                font-size: 7vw;
+            }
+        
+            input {
+                margin-right: 10px;
+                font-size: 7vw;
+                width: 5vw;
+            }
+        }
+    
+        button {
+            font-size: 7vw;
+        }
+    }
+    
+    .nutrition-values-set {
+    
+        button {
+            font-size: 7vw;
+            padding: 1vh 8.3vw;
+        }
+    }
+    
+  }

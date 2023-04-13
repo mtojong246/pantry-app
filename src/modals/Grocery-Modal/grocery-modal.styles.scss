@@ -162,3 +162,79 @@
 .disabled {
     background-color: #90F1B7;
 }
+
+@media screen and (max-width: 480px) {
+    .grocery-modal-container, .grocery-modal-overlay {
+        height: 100%;
+    }
+    
+    
+    .grocery-search-container {
+        width: 90vw;
+        height: 70vh;
+    }
+    
+    .grocery-search-title {
+    
+        span {
+            padding: 2vh;
+            font-size: 10vw;
+        }
+    
+        .exit-grocery {
+            height: 10vw;
+            width: 10vw;
+            padding-right: 2vh;
+        }
+    
+    }
+    
+    .grocery-search-bar {
+        margin-top: 3vh;
+        gap: 2vw;
+
+    
+        button {
+    
+            .grocery-search-button {
+                height: 7vw;
+                width: 7vw;
+                padding: 1vh;
+            }
+        }
+    
+    
+        input {
+            width: 60vw;
+            height: 6vh;
+            font-size: 8vw;
+        }
+    }
+       
+    
+    .grocery-search-results-container {
+        margin-top: 3vh;
+        height: 35vh;
+    
+        .grocery-search-results-box {
+            gap: 5vh;
+            
+        }
+    
+        .grocery-search-results {
+            width: 76vw;
+            padding: 15px;
+     
+    
+            span {
+                font-size: 8vw;
+            }
+            
+            button {
+                font-size: 5vw;
+                padding: 2vw 5vw;
+            }
+
+        }
+    }
+}

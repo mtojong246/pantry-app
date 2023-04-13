@@ -41,6 +41,16 @@
 
 @media only screen and (max-width: 480px) {
     .footer-container {
-        width: 103vw;
+        padding: 5vw 0;
+    }
+    
+    .media-container {
+        gap: 3vw;
+        
+    
+        .brand {
+            height: 10vw;
+            width: 10vw;
+        }
     }
 }
