@@ -80,3 +80,48 @@
     --animate-delay: 2s;
 }
 
+@media only screen and (max-width: 480px) {
+    
+    .title {
+        font-size: 18vw;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 900;
+        color: #FAAB78;
+        padding-left: 2vh;
+    }
+    
+    .drumstick {
+        font-size: 16vw;
+        margin-left: 0.5vh;
+    }
+    
+    
+    
+    .get-started {
+        font-size: 8vw;
+        padding: 1.5vw 4vw;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        color: #FAAB78;
+        border: 3px solid #FAAB78;
+        border-radius: 30px;
+        background-color: #FFECA9;
+        margin-top: 1vh;
+        z-index: 2;
+    }
+    
+    .get-started:hover {
+        background-color: #FAAB78;
+        color: #FFECA9;
+        cursor: pointer;
+    }
+    
+    .title-desc {
+        font-size: 6vw;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        color: #FAAB78;
+        padding-top: 20vh;
+        padding-bottom: 2vh;
+    }
+}

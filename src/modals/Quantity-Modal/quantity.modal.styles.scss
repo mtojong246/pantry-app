@@ -71,3 +71,35 @@
       transform: scale(1);
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .quantity-modal-container, .quantity-modal-overlay {
+        height: 100%;
+    }
+    
+    
+    .quantity-values-container {
+        width: 90vw;
+    
+        button {
+            font-size: 10vw;
+            padding: 1vh 8vw;
+        }
+    }
+    
+    .quantity-container {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw;
+        font-size: 10vw;
+        color: #666666;
+        margin-bottom: 4vh;
+    
+        input {
+            font-size: 10vw;
+            width: 15vw;
+        }
+    }
+  }

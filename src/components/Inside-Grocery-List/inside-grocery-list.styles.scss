@@ -46,3 +46,26 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .inside-grocery-list-container {
+        gap: 3vh;
+    }
+    
+    .grocery-item-container {
+        width: 60vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vh 2vw;
+        font-size: 8vw;
+    
+        button {
+            font-size: 8vw;
+            color: #666666;
+            border: none;
+            background-color: white;
+        }
+    }
+    
+}

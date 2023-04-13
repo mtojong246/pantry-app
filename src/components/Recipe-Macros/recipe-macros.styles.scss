@@ -114,3 +114,98 @@
     }
 }
 
+
+@media only screen and (max-width: 480px) {
+    .macros-container {
+        width: 80vw;
+    
+        button {
+            margin-top: 4vh;
+            border-radius: 20px;
+            color: #666666;
+            background-color: white;
+            border: 1px solid #666666;
+            font-size: 8vw;
+            padding: 2vh 7vw;
+        }
+    
+        ul {
+            align-self: center;
+            text-align: left;
+            list-style: none;
+            border: 1px solid #666666;
+            color: #666666;
+            padding: 0px 15px;
+            width: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            button {
+                padding: 10px 0;
+                border: none;
+                margin: 0;
+            }
+    
+            button:hover {
+                cursor: pointer;
+                text-decoration: underline;
+                color: #FAAB78;
+                background-color: white;
+            }
+           
+        }
+    }
+    
+    .macros-servings-container {
+        margin: 5vh 0;
+    
+        span {
+            font-size: 8vw;
+            font-weight: 400;
+        }
+    
+        .servings-icon {
+            margin: 0 5px;
+            font-size: 8vw;
+        }
+    
+        .servings-icon:hover {
+            cursor: pointer;
+            color: #A7F4F4;
+        }
+    }
+    
+    .macros-levels-container {
+        font-size: 8vw;
+        margin-bottom: 5vh;
+    }
+    
+    .macros-level {
+        width: 80vw;
+        height: 6vh;
+        border: 3px solid #666666;
+        margin: 10px 0;
+        display: flex;
+    }
+    
+    .macros-quantities {
+        text-align: right;
+        
+        span {
+            font-size: 8vw;
+            font-weight: 400;
+        }
+    }
+    
+    
+    .macros-calories-container {
+        margin-top: 4vh;
+    
+        span {
+            font-size: 8vw;
+            color: #666666;
+        }
+    }
+}

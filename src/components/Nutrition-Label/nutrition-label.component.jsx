@@ -67,9 +67,9 @@ const NutritionLabel = ({recipe}) => {
                 </div>
                 <hr />
             </div>
-            <p style={{color: '#828282', fontSize: '1.5vh'}}>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</p>
-            <p style={{color: '#828282', fontSize: '1.5vh'}}>** Nutrient information is not available for all ingredients. Amount is based on available nutrient data.</p>
-            <p style={{color: '#828282', fontSize: '1.5vh'}}>(-) Information is not currently available for this nutrient. If you are following a medically restrictive diet, please consult your doctor or registered dietitian before preparing this recipe for personal consumption.</p>
+            <p className='details-paragraph'>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</p>
+            <p className='details-paragraph'>** Nutrient information is not available for all ingredients. Amount is based on available nutrient data.</p>
+            <p className='details-paragraph'>(-) Information is not currently available for this nutrient. If you are following a medically restrictive diet, please consult your doctor or registered dietitian before preparing this recipe for personal consumption.</p>
         </div>
     )
 }

@@ -73,3 +73,39 @@
       transform: scale(1);
     }
   }
+
+
+@media screen and (max-width: 480px) {
+    .log-quantity-modal-container, .log-quantity-modal-overlay {
+        height: 100%
+    }
+    
+    
+    .log-quantity-values-container {
+        width: 90vw;
+        padding: 1vh;
+    
+        button {
+            font-size: 10vw;
+        }
+    
+    }
+    
+    .log-quantity-container {
+        width: 92%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1vw;
+        font-size: 10vw;
+        color: #666666;
+    
+        input {
+            font-size: 10vw;
+            width: 10vw;
+        }
+    }
+    
+    
+}
