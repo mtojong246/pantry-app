@@ -11,7 +11,7 @@
         width: 94%;
         border: 5px solid #FAAB78;
         border-radius: 10px;
-        padding: 0.5vh;
+        padding: 0.5vw;
 
         .recipe-item-title {
             display: flex;
@@ -23,19 +23,19 @@
             }
 
             span {
-                font-size: 3.5vh;
+                font-size: 3vw;
                 font-weight: 500;
                 color: #FAAB78;
             }
 
             button {
-                height: 4vh;
+                height: 4vw;
                 padding: 0 2vw;
                 background-color: #FAAB78;
                 border: 3px solid #FAAB78;
                 border-radius: 5px;
                 color: white;
-                font-size: 1.75vh;
+                font-size: 1.5vw;
             }
 
             button:hover {
@@ -56,17 +56,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60vw;
+    width: 50vw;
 
     p {
-        font-size: 3vh;
+        font-size: 2.5vw;
         color: #666666;
         text-align: center;
     }
 
     button {
-        padding: 1.5vh 2vw;
-        font-size: 2.5vh;
+        padding: 1vw 2vw;
+        font-size: 2vw;
         border-radius: 10px;
         color: #FAAB78;
         background-color: white;

@@ -81,20 +81,20 @@ const FoodLogList = () => {
                                 <span>{categories.category}</span>
                             </div>
                             {categories.items.length !== 0 ? (
-                                <>
-                                    <div className='food-item-box'>
-                                        {categories.items.map(item => (
-                                            <div className='food-item'>
-                                                <span>{item.name}<button id='food-item-quantity' value={JSON.stringify(item)} onClick={changeQuantity}>({item.quantity})</button></span><FontAwesomeIcon icon={faXmark} onClick={() => {removeItemFromLog(categories.category, item.name); removeNutritionInfo(JSON.stringify(item))}} className='remove-from-log'/>
-                                            </div>
-                                        ))}
+                            <>
+                            <div className='food-item-box'>
+                                {categories.items.map(item => (
+                                    <div className='food-item'>
+                                        <span>{item.name}<button id='food-item-quantity' value={JSON.stringify(item)} onClick={changeQuantity}>({item.quantity})</button></span><FontAwesomeIcon icon={faXmark} onClick={() => {removeItemFromLog(categories.category, item.name); removeNutritionInfo(JSON.stringify(item))}} className='remove-from-log'/>
                                     </div>
-                                    <div className='add-food-box move-up'>
-                                        <button onClick={onClickHandler} value={categories.category}>
-                                            <span className='add-food'>Add more</span><img src={PlusCircle} alt='plus' />
-                                        </button>
-                                    </div>
-                                </>
+                                ))}
+                            </div>
+                            <div className='add-food-box move-up'>
+                                <button onClick={onClickHandler} value={categories.category}>
+                                    <span className='add-food'>Add more</span><img src={PlusCircle} alt='plus' />
+                                </button>
+                            </div>
+                            </>
                             ) : (
                                 <div className='add-food-box'>
                                     <button onClick={onClickHandler} value={categories.category}>

@@ -1,7 +1,7 @@
 .nutrition-label-container {
     border: 1px solid #8E8E8E;
-    padding: 3vh;
-    width: 35vw;
+    padding: 2vw;
+    width: 40vw;
 
     hr {
         width: 100%;
@@ -14,17 +14,17 @@
 .nutrition-label-title-container {
 
     span {
-        font-size: 4vh;
+        font-size: 3vw;
     }
 
     p {
         margin: 5px 0 0 0;
-        font-size: 2vh;
+        font-size: 1.5vw;
     }
 }
 
 .daily-value {
-    font-size: 2vh;
+    font-size: 1.5vw;
 }
 
 .nutrition-label-quantities-container {
@@ -42,7 +42,7 @@
     justify-content: space-between;
 
     span {
-        font-size: 2vh;
+        font-size: 1.5vw;
         font-weight: 400;
     }
 }
@@ -70,7 +70,7 @@
 
 .details-paragraph {
     color: '#828282';
-    font-size: 1.5vh;
+    font-size: 1vw;
 }
 
 @media screen and (max-width: 480px) {

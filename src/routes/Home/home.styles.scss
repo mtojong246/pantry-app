@@ -3,16 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
 }
 
 .outside-pantry {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    
 
     label {
         align-self: flex-start;
-        font-size: 3vh;
+        font-size: 3vw;
         font-family: 'Archivo', sans-serif;
         font-weight: 900;
         color: #FAAB78;
@@ -36,8 +36,8 @@
     
 
     img {
-        height: 10vh;
-        width: 10vh;
+        height: 8vw;
+        width: 8vw;
         margin-bottom: 10px;
         filter: invert(69%) sepia(55%) saturate(427%) hue-rotate(333deg) brightness(100%) contrast(97%);
     }
@@ -46,7 +46,7 @@
     span {
         display: block;
         color: #FAAB78;
-        font-size: 2.5vh;
+        font-size: 2vw;
         font-weight: 600;
     }
 }
@@ -74,11 +74,10 @@
     justify-content: center;
     align-items: center;
     gap: 3.25vh;
-    margin-bottom: 5vh;
 
 
     button {
-        font-size: 2.25vh;
+        font-size: 2vw;
         padding: 1.5vh 1.5vw;
         border-radius: 15px;
         border: 3px solid #FAAB78;
@@ -107,13 +106,13 @@
 
 .pantry-message {
     p {
-        font-size: 3vh;
+        font-size: 2vw;
         font-family: 'Archivo', sans-serif;
         font-weight: 900;
         color: #90F1B7;
         text-align: center;
-        width: 30vw;
-        margin: 0;
+        width: 70vw;
+        margin-top: 0;
     }
 }
 

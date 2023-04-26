@@ -21,6 +21,12 @@ const PantryModal = ({pantryModal, togglePantryModal}) => {
         setSearchResults(data);
     }
 
+    const onKeyPressHandler = (event) => {
+        if (event.key === 'Enter') {
+            onSearchEnter(searchPantry)
+        }
+    }
+
 
     const exitPantryModal = () => {
         togglePantryModal();
@@ -41,7 +47,7 @@ const PantryModal = ({pantryModal, togglePantryModal}) => {
                             <FontAwesomeIcon icon={faXmark} onClick={exitPantryModal} className='exit-pantry' />        
                         </div>
                         <div className='pantry-search-bar'>
-                            <input type='text' placeholder='Search' onChange={onSearchPantry}/>
+                            <input type='text' placeholder='Search' onChange={onSearchPantry} onKeyDown={onKeyPressHandler}/>
                             <button onClick={() => onSearchEnter(searchPantry)}><FontAwesomeIcon icon={faMagnifyingGlass} className='pantry-search-button'/></button>
                         </div>
                         <div className='pantry-search-results-container'>

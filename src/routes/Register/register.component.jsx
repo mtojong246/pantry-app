@@ -51,15 +51,23 @@ const Register = () => {
         }
     }
 
+    const onKeyPressHandler = (event) => {
+        if (event.key === "Enter") {
+            onClickHandler();
+        } 
+
+        return;
+    }
+
 
     return (
         <div className='register-container'>
             <div className='register-box'>
                 <span className='register-title'>Register</span>
                 <form className='register-form'>
-                    <label>Email address</label><input type='text' onChange={onEmailChange}/>
-                    <label>Password</label><input type='password' onChange={onPasswordChange} />
-                    <label>Confirm Password</label><input type='password' onChange={onConfirmPasswordChange}/>
+                    <label>Email address</label><input type='text' onChange={onEmailChange} onKeyDown={onKeyPressHandler}/>
+                    <label>Password</label><input type='password' onChange={onPasswordChange}  onKeyDown={onKeyPressHandler}/>
+                    <label>Confirm Password</label><input type='password' onChange={onConfirmPasswordChange} onKeyDown={onKeyPressHandler}/>
                 </form>
                 <div className='register-info'>
                     <span>Already have an account?</span><Link to='/login'><span className='signin-link'>Sign in!</span></Link>  

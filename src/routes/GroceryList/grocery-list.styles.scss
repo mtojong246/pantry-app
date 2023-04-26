@@ -3,12 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 6vh 0;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
 .outside-grocery-list {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,21 +15,20 @@
 
     label {
         align-self: flex-start;
-        font-size: 3vh;
+        font-size: 3vw;
         font-family: 'Archivo', sans-serif;
         font-weight: 900;
         color: #FAAB78;
     }
 
     .grocery-add-button {
-        padding: 1vh 5vh;
-        margin-top: 5vh;
+        padding: 0.5vw 2vw;
         color: white;
         background-color: #FAAB78;
         border: 3px solid #FAAB78;
         border-radius: 20px;
         font-family: 'Archivo', sans-serif;
-        font-size: 2.5vh;
+        font-size: 2vw;
         font-weight: 600;
     }
 
@@ -65,14 +63,14 @@
     color: #b9bbbb;
 
     .carrot {
-        height: 12vh;
-        width: 12vh;
+        height: 8vw;
+        width: 8vw;
         transition: all 0.1s ease-in;
     }
 
     span {
         font-family: 'Archivo', sans-serif;
-        font-size: 2.5vh;
+        font-size: 2vw;
         font-weight: 600;
         transition: all 0.1s ease-in;
     }
@@ -91,12 +89,11 @@
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    margin-bottom: 5vh;
 
 
     button {
-        font-size: 2.25vh;
-        padding: 1.5vh 2vw;
+        font-size: 2vw;
+        padding: 0.5vw 2vw;
         border-radius: 15px;
         border: 3px solid #FAAB78;
         color: #FAAB78;

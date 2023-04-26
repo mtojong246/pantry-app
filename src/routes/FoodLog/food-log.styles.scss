@@ -3,16 +3,16 @@
     justify-content: center;
     align-items: flex-start;
     gap: 3vw;
-    margin: 3vh 0;
+    margin: 6vh 0;
 
 
     .food-log, .nutrition-details {
-        margin-top: 3.7vw;
+        margin-top: 2vw;
     }
 
     .food-log-title {
         font-family: 'Archivo', sans-serif;
-        font-size: 4vh;
+        font-size: 4vw;
         font-weight: 600;
         color: #FAAB78;
  
@@ -20,7 +20,7 @@
 
     .nutrition-details-title {
         font-family: 'Archivo', sans-serif;
-        font-size: 4vh;
+        font-size: 4vw;
         font-weight: 600;
         color: #FAAB78;
     }
@@ -39,8 +39,9 @@
     justify-content: flex-start;
     align-items: center;
     button {
-        margin-left: 20px;
-        padding: 0.75vh 2vw;
+        font-size: 1vw;
+        margin-left: 1vw;
+        padding: 1vw 2vw;
         color: #FAAB78;
         background-color: white;
         border: 1px solid #FAAB78;

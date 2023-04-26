@@ -39,15 +39,15 @@
 
     span {
         font-family: "Inter", sans-serif;
-        font-size: 3.5vh;
+        font-size: 3vw;
         font-weight: 400;
-        padding-left: 2vh;
+        padding-left: 1vw;
     }
 
     .exit-pantry {
-        height: 3.5vh;
-        width: 3.5vh;
-        padding-right: 2vh;
+        height: 3vw;
+        width: 3vw;
+        padding-right: 1vw;
         transition: all 0.1s ease-in-out;
     }
 
@@ -59,7 +59,7 @@
 }
 
 .pantry-search-bar {
-    margin-top: 2vh;
+    margin-top: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,14 +67,14 @@
     padding: 0 1vw;
 
     button {
-        padding: 1vh;
+        padding: 1vw;
         border: 3px solid #FAAB78;
         border-radius: 10px;
         background-color: white;
 
         .pantry-search-button {
-            height: 2vh;
-            width: 2vh;
+            height: 2vw;
+            width: 2vw;
             color: #FAAB78;
         }
     }
@@ -90,11 +90,11 @@
     }
 
     input {
-        padding: 1vh;
+        padding: 1vw;
         width: 83.5%;
         border: 3px solid #FAAB78;
         border-radius: 10px;
-        font-size: 2vh;
+        font-size: 2vw;
     }
 }
 
@@ -113,8 +113,8 @@
 
 
 .pantry-search-results-container {
-    margin-top: 2vh;
-    height: 25vh;
+    margin-top: 2vw;
+    height: 50vh;
     font-family: "Inter", sans-serif;
     overflow-y: scroll;
     padding: 0 0.5vw;
@@ -124,13 +124,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2vh;
+        gap: 2vw;
         
     }
 
     .pantry-search-results {
-        padding: 1vh 1vw;
-        width: 90%;       
+        padding: 1vw;
+        width: 92%;       
         border: 3px solid #FAAB78;
         border-radius: 10px;
         display: flex;
@@ -138,16 +138,17 @@
         align-items: center;
 
         span {
-            font-size: 2vh;
+            font-size: 2vw;
             color: #FAAB78;
         }
         
         button {
-            padding: 0.5vh 1vw;
+            padding: 0.5vw 1vw;
             border-radius: 10px;
             color: white;
             border: 2px solid #FAAB78;
             background-color: #FAAB78; 
+            font-size: 2vw;
         }
 
         button:hover {

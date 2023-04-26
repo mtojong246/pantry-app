@@ -2,7 +2,7 @@
     width: 40vw;
 
     button {
-        margin-top: 4vh;
+        margin-top: 3vw;
         border-radius: 20px;
         color: #666666;
         background-color: white;
@@ -25,15 +25,15 @@
         list-style: none;
         border: 1px solid #666666;
         color: #666666;
-        padding: 0px 15px;
-        width: 140px;
+        padding: 0 1.5vw;
+        width: 13.5vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
         button {
-            padding: 10px 0;
+            padding: 1vw 0;
             border: none;
             margin: 0;
         }
@@ -52,13 +52,13 @@
     margin: 4vh 0;
 
     span {
-        font-size: 2.5vh;
+        font-size: 2vw;
         font-weight: 400;
     }
 
     .servings-icon {
         margin: 0 5px;
-        font-size: 24px;
+        font-size: 2vw;
     }
 
     .servings-icon:hover {
@@ -68,14 +68,14 @@
 }
 
 .macros-levels-container {
-    font-size: 2.75vh;
+    font-size: 2vw;
 }
 
 .macros-level {
     width: 100%;
-    height: 3.75vh;
+    height: 6vh;
     border: 3px solid #666666;
-    margin: 10px 0;
+    margin: 1vw 0;
     display: flex;
 }
 
@@ -99,7 +99,7 @@
     text-align: right;
     
     span {
-        font-size: 2.75vh;
+        font-size: 2vw;
         font-weight: 400;
     }
 }
@@ -109,7 +109,7 @@
     margin-top: 4vh;
 
     span {
-        font-size: 4vh;
+        font-size: 3vw;
         color: #666666;
     }
 }

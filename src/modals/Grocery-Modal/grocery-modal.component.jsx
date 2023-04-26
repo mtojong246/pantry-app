@@ -21,6 +21,12 @@ const GroceryModal = ({groceryModal, toggleGroceryModal}) => {
         setSearchResults(data);
     }
 
+    const onKeyPressHandler = (event) => {
+        if (event.key === 'Enter') {
+            onSearchEnter(searchGroceries)
+        }
+    }
+
 
     const exitGroceryModal = () => {
         toggleGroceryModal();
@@ -39,7 +45,7 @@ const GroceryModal = ({groceryModal, toggleGroceryModal}) => {
                             <FontAwesomeIcon icon={faXmark} onClick={exitGroceryModal} className='exit-grocery' />        
                         </div>
                         <div className='grocery-search-bar'>
-                            <input type='text' placeholder='Search' onChange={onSearchGroceries}/>
+                            <input type='text' placeholder='Search' onChange={onSearchGroceries} onKeyDown={onKeyPressHandler}/>
                             <button onClick={() => onSearchEnter(searchGroceries)}><FontAwesomeIcon icon={faMagnifyingGlass} className='grocery-search-button'/></button>
                         </div>
                         <div className='grocery-search-results-container'>

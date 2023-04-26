@@ -44,13 +44,21 @@ const Login = () => {
         }
     }
 
+    const onKeyPressHandler = (event) => {
+        if (event.key === "Enter") {
+            onClickHandler();
+        } 
+
+        return;
+    }
+
     return (
         <div className='login-container'>
             <div className='login-box'>
                 <span className='login-title'>Login</span>
                 <form className='login-form'>
-                    <label>Email address</label><input type='text' onChange={onEmailChange}/>
-                    <label>Password</label><input type='password' onChange={onPasswordChange}/>
+                    <label>Email address</label><input type='text' onChange={onEmailChange} onKeyDown={onKeyPressHandler}/>
+                    <label>Password</label><input type='password' onChange={onPasswordChange} onKeyDown={onKeyPressHandler}/>
                 </form>
                 <div className='login-info'>
                     <span className='login-block'><span>Don't have an account?</span><Link to='/register'><span className='signup-link'>Sign up!</span></Link></span>

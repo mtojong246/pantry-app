@@ -9,50 +9,47 @@
 
 .food-log-categories {
     margin-bottom: 6vh;
+    width: 40vw;
 }
 
 .food-category-box {
-    width: 39.2vw;
-    height: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #FAAB78;
     border: 3px solid #FAAB78;
-    font-size: 2.5vh;
+    font-size: 2vw;
     font-family: 'Archivo', sans-serif;
     font-weight: 800;
     color: #FFDB5A;
-    padding: 1vh 0 1.5vh 1vw;
+    padding: 0.5vw;
 }
 
 .add-food-box {
-    width: 40.15vw;
-    border: 1px solid #FAAB78;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5vw;
+    border: 3px solid #FAAB78;
     color: #FAAB78;
-    padding-right: 5px;
-    padding-bottom: 3px;
-    position: relative; 
-    bottom: 1px;
+    border-top: none;
 
 
     button {
-        padding-bottom: 10px;
         background-color: white;
         color: #FAAB78;
         border: none;
-        font-size: 2vh;
+        font-size: 2vw;
         font-family: 'Inter', sans-serif;
-        padding: 0.5vh 0.5vw 1vh 0;
-        position: relative;
-        top: 1px;
     }
 
     img {
-        height: 2.5vh;
-        width: 2.5vh;
+        height: 2vw;
+        width: 2vw;
         margin-left: 0.75vh;
         filter: invert(69%) sepia(55%) saturate(427%) hue-rotate(333deg) brightness(100%) contrast(97%);
         position: relative;
-        top: 5px;
+        top: 0.25vw;
         transition: all 0.1s ease-in-out;
     }
 
@@ -75,10 +72,7 @@
     }
 }
 
-.move-up {
-    position: relative;
-    bottom: 4px;
-}
+
 
 .food-item-box {
     display: flex;
@@ -89,15 +83,14 @@
 }
 
 .food-item {
-    width: 40.15vw;
-    border: 1px solid #FAAB78;
-    padding: 1vh 0.1vw 1vh 0.1vw;
-    font-size: 1.75vh;
+    border: 3px solid #FAAB78;
+    padding: 0.5vw;
+    font-size: 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    bottom: 2px;
+    width: 38.7vw;
+    border-top: none;
 
     span {
         margin-left: 1vw;
@@ -117,7 +110,7 @@
 #food-item-quantity {
     background-color: white;
     border: none;
-    font-size: 1.75vh;
+    font-size: 2vw;
 }
 
 #food-item-quantity:hover {

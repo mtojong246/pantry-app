@@ -66,7 +66,11 @@ const FoodLogModal = ({ foodLogModal, toggleFoodLogModal }) => {
         setPrevQuantities(quantData);
     }
 
-        
+    const onKeyPressHandler = (event) => {
+        if (event.key === 'Enter') {
+            onSearchEnter(searchLog)
+        }
+    }
 
     return (
         <>
@@ -80,16 +84,18 @@ const FoodLogModal = ({ foodLogModal, toggleFoodLogModal }) => {
                             <FontAwesomeIcon icon={faXmark} className='exit-food-log-modal' onClick={exitLogModal}/>
                         </div>
                         <div className='log-search-container'>
-                            <input type='text' onChange={onSearchLog}/>
+                            <input type='text' onChange={onSearchLog} onKeyDown={onKeyPressHandler}/>
                             <button onClick={() => onSearchEnter(searchLog)}><FontAwesomeIcon icon={faMagnifyingGlass} className='search-log' /></button>
                         </div>
-                        <div className='log-results-container'>
-                            {searchResults.map(result => (
-                                <div className='log-search-results'>
-                                    <span>{result}</span>
-                                    <button className='add-item-to-log' value='✓' onClick={() => {addItemToLog(foodCategory, JSON.stringify(result)); addNutritionInfo(JSON.stringify(result))}}>Add</button>
-                                </div>
-                            ))}
+                        <div className='log-results-larger-container'>
+                            <div className='log-results-container'>
+                                {searchResults.map(result => (
+                                    <div className='log-search-results'>
+                                        <span>{result}</span>
+                                        <button className='add-item-to-log' value='✓' onClick={() => {addItemToLog(foodCategory, JSON.stringify(result)); addNutritionInfo(JSON.stringify(result))}}>Add</button>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
