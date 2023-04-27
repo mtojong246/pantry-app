@@ -85,7 +85,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    top: 9vh;
+    top: 6vh;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 786px) {
@@ -129,7 +130,7 @@
     
     
     .settings {
-        top: 18vh;
+        top: 12vh;
         z-index: 1;
     }
 }

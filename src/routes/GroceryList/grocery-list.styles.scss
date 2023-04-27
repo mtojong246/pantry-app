@@ -118,6 +118,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .grocery-list-container {
+        margin: 10vh 0;
+    }
     
     .outside-grocery-list {
         margin: 10vw;
@@ -166,13 +169,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 3vw;
-        margin: 5vh 0;
+        flex-direction: column;
+        gap: 5vh;
+        margin-top: 5vh;
     
     
         button {
             font-size: 8vw;
-            padding: 1.5vh 2vw;
+            padding: 2vh 4vw;
             border-radius: 15px;
             border: 3px solid #FAAB78;
             color: #FAAB78;
