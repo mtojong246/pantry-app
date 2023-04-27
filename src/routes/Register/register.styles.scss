@@ -82,8 +82,8 @@
 
 @media screen and (max-width: 480px) {
     .register-box {
-        padding: 5vh 1vw;
-        width: 90vw;
+        padding: 6vh 5vw;
+        width: 85vw;
         border-radius: 20px;
         background-color: white;
         display: flex;
@@ -101,10 +101,9 @@
     }
     
     .register-form {
-        width: 80vw;
+        width: 75vw;
     
         input {
-            width: 98%;
             height: 6vh;
             font-size: 8vw;
         }

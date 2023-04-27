@@ -121,12 +121,15 @@
 
 
 @media only screen and (max-width: 768px) {
+    .food-log-categories {
+        width: 80vw;
+    }
+
     .food-category-box {
         font-size: 2vh;
     }
 
     .add-food-box {
-        width: 39.9vw;
 
         button {
             font-size: 1.5vh;
@@ -142,7 +145,6 @@
     }
     
     .food-category-box {
-        width: 85.2vw;
         font-size: 8vw;
         padding: 3vw;
         height: 9vw;
@@ -150,7 +152,6 @@
     }
     
     .add-food-box {
-        width: 85vw;
         border: 1px solid #FAAB78;
         text-align: right;
         color: #FAAB78;

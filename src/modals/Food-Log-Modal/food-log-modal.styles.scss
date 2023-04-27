@@ -169,18 +169,24 @@
         width: 90vw;
         height: 70vh;
     }
-    
+
     .log-title {
-        width: 77.5vw;
-        padding: 3vh;
-        font-size: 10vw;
+        span {
+            padding: 2vh;
+            font-size: 10vw;
+        }
+
+        .exit-food-log-modal {
+            height: 10vw;
+            width: 10vw;
+            padding-right: 2vh;
+        }
     }
+    
         
     .log-search-container {
         margin-top: 3vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        gap: 2vw;
     
         input {
             width: 60vw;
@@ -189,15 +195,19 @@
         }
     
         .search-log {
-            font-size: 8vw;
+            height: 7vw;
+            width: 7vw;
             padding: 1vh;
         }
     }
     
+    .log-results-larger-container {
+        margin-top: 3vh;
+        height: 42vh;
+    }
+
     .log-results-container {
         gap: 5vh;
-        margin-top: 3vh;
-        height: 45vh;
     }
     
     .log-search-results {
