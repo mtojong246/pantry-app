@@ -33,6 +33,14 @@ const GroceryModal = ({groceryModal, toggleGroceryModal}) => {
         setSearchGroceries('');
         setSearchResults([]);
     }
+
+    const onClickHandler = (event) => {
+        let button = event.target;
+        button.style.backgroundColor = '#90F1B7';
+        button.style.borderColor = '#90F1B7';
+        button.textContent = button.value;
+    }
+
     return (
         <>
         {groceryModal && (
@@ -53,7 +61,7 @@ const GroceryModal = ({groceryModal, toggleGroceryModal}) => {
                                 {searchResults.map(result => (
                                     <div className='grocery-search-results'>
                                         <span>{result}</span>
-                                        <button className='add-item-to-grocery' onClick={() => addItemToGroceries(result)} value='✓'>Add</button>
+                                        <button className='add-item-to-grocery' onClick={(event) => {addItemToGroceries(result); onClickHandler(event)}} value='✓'>Add</button>
                                     </div>
                                 ))}
                             </div>

@@ -34,6 +34,13 @@ const PantryModal = ({pantryModal, togglePantryModal}) => {
         setSearchResults([]);
     }
 
+    const onClickHandler = (event) => {
+        let button = event.target;
+        button.style.backgroundColor = '#90F1B7';
+        button.style.borderColor = '#90F1B7';
+        button.textContent = button.value;
+    }
+
  
     return (
         <>
@@ -55,7 +62,7 @@ const PantryModal = ({pantryModal, togglePantryModal}) => {
                                 {searchResults.map(result => (
                                     <div className='pantry-search-results'>
                                         <span>{result}</span>
-                                        <button onClick={() => addItemToPantry(result)} className='add-item-to-pantry' value='✓'>Add</button>
+                                        <button onClick={(event) => {addItemToPantry(result); onClickHandler(event)}} className='add-item-to-pantry' value='✓'>Add</button>
                                     </div>
                                 ))}
                             </div>

@@ -72,6 +72,14 @@ const FoodLogModal = ({ foodLogModal, toggleFoodLogModal }) => {
         }
     }
 
+    const onClickHandler = (event) => {
+        let button = event.target;
+        button.style.backgroundColor = '#90F1B7';
+        button.style.borderColor = '#90F1B7';
+        button.textContent = button.value;
+    }
+
+
     return (
         <>
         {foodLogModal && (
@@ -92,7 +100,7 @@ const FoodLogModal = ({ foodLogModal, toggleFoodLogModal }) => {
                                 {searchResults.map(result => (
                                     <div className='log-search-results'>
                                         <span>{result}</span>
-                                        <button className='add-item-to-log' value='✓' onClick={() => {addItemToLog(foodCategory, JSON.stringify(result)); addNutritionInfo(JSON.stringify(result))}}>Add</button>
+                                        <button className='add-item-to-log' value='✓' onClick={(event) => {addItemToLog(foodCategory, JSON.stringify(result)); addNutritionInfo(JSON.stringify(result)); onClickHandler(event)}}>Add</button>
                                     </div>
                                 ))}
                             </div>
