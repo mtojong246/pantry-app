@@ -11,10 +11,6 @@
     padding: 5vh 1vw;
     border-radius: 20px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     button {
         border-radius: 20px;
@@ -35,6 +31,11 @@
     }
 }
 
+.register-button-container, .register-title-container {
+    padding: 0 1vw;
+    text-align: center;
+}
+
 .register-title {
     font-size: 6vh;
     font-family: 'Archivo', sans-serif;
@@ -43,7 +44,7 @@
 }
 
 .register-form {
-    width: 50vh;
+    padding: 0 1vw;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     margin: 0 2vh;
@@ -66,7 +67,7 @@
 }
 
 .register-info {
-    width: 50vh;
+    padding: 0 1vw;
     margin: 3vh 2vh 5vh 2vh;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -85,10 +86,6 @@
         width: 85vw;
         border-radius: 20px;
         background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     
         button {
             font-size: 8vw;
@@ -100,7 +97,7 @@
     }
     
     .register-form {
-        width: 75vw;
+
     
         input {
             height: 6vh;
@@ -118,7 +115,6 @@
     
     .register-info {
         align-self: flex-start;
-        width: 80vw;
         margin: 3vh 2vh 5vh 2vh;
         font-family: 'Inter', sans-serif;
         font-weight: 400;

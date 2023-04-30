@@ -63,7 +63,9 @@ const Register = () => {
     return (
         <div className='register-container'>
             <div className='register-box'>
-                <span className='register-title'>Register</span>
+                <div className='register-title-container'>
+                    <span className='register-title'>Register</span>
+                </div>
                 <form className='register-form'>
                     <label>Email address</label><input type='text' onChange={onEmailChange} onKeyDown={onKeyPressHandler}/>
                     <label>Password</label><input type='password' onChange={onPasswordChange}  onKeyDown={onKeyPressHandler}/>
@@ -72,7 +74,9 @@ const Register = () => {
                 <div className='register-info'>
                     <span>Already have an account?</span><Link to='/login'><span className='signin-link'>Sign in!</span></Link>  
                 </div>  
-                <button onClick={() => onClickHandler()}>Sign up</button>
+                <div className='register-button-container'>
+                    <button onClick={() => onClickHandler()}>Sign up</button>
+                </div>
             </div>     
         </div>
     )

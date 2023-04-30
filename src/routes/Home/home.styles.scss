@@ -115,6 +115,10 @@
     }
 }
 
+.mobile-pantry {
+    margin: 25vh 10vw 10vw 10vw;
+}
+
 
 @media only screen and (max-width: 786px) {
 
@@ -144,7 +148,7 @@
     
     .outside-pantry {
         margin: 10vw;
-    
+
         label {
             font-size: 10vw;
         }
