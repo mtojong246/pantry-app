@@ -84,13 +84,13 @@
 
 .food-item {
     border: 3px solid #FAAB78;
-    padding: 0.5vw;
+    padding: 0.5vw 0;
     font-size: 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 38.7vw;
     border-top: none;
+    width: 99%;
 
     span {
         margin-left: 1vw;
@@ -181,9 +181,9 @@
     }
     
     .food-item {
-        width: 85vw;
         padding: 3vw;
         font-size: 8vw;
+        width: 91%;
     }
     
     

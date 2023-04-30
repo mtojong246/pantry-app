@@ -6,6 +6,7 @@
     right: 0;
     bottom: 0;
     position: fixed;
+    z-index: 5;
 }
 
 .reset-modal-container {
@@ -16,6 +17,11 @@
 
 .reset-modal-overlay {
     background: rgba(49,49,49,0.8);
+}
+
+.reset-modal-content {
+    position: relative;
+    z-index: 5;
 }
 
 

@@ -31,6 +31,7 @@ const Navigation = () => {
     const foodLog = () => {
         navigate('/profile/food-log')
     }
+    
 
     return (
         <div className='page-container'>
