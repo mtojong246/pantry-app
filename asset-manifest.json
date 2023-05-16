@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pantry-app/static/css/main.2c55aa08.css",
+    "main.css": "/pantry-app/static/css/main.1d318cb6.css",
     "main.js": "/pantry-app/static/js/main.48451c53.js",
     "static/js/787.3c10f627.chunk.js": "/pantry-app/static/js/787.3c10f627.chunk.js",
     "index.html": "/pantry-app/index.html",
     "static/media/plus-circle.svg": "/pantry-app/static/media/plus-circle.8b7a5e5718b3bb276cd89d67a45bab42.svg",
-    "main.2c55aa08.css.map": "/pantry-app/static/css/main.2c55aa08.css.map",
+    "main.1d318cb6.css.map": "/pantry-app/static/css/main.1d318cb6.css.map",
     "main.48451c53.js.map": "/pantry-app/static/js/main.48451c53.js.map",
     "787.3c10f627.chunk.js.map": "/pantry-app/static/js/787.3c10f627.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c55aa08.css",
+    "static/css/main.1d318cb6.css",
     "static/js/main.48451c53.js"
   ]
 }
