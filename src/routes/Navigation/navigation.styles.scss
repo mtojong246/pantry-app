@@ -77,8 +77,10 @@
 
 .settings {
     position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     top: 6rem;
-    right: 0;
 }
 
 @media only screen and (max-width: 1000px) {
