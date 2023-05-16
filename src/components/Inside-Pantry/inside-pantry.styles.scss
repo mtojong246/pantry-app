@@ -1,31 +1,33 @@
 .inside-pantry-container {
-    height: 45vh;
-    width: 65vw;
+    max-height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5vw;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
+    padding: 1rem;
 
     .pantry-items {
         border: 3px solid #FAAB78;
-        padding: 1vw;
+        padding: 1rem;
         border-radius: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 1vw;
+        gap: 1rem;
 
         span {
-            font-size: 2vw;
+            font-size: 2rem;
             font-family: "Inter", sans-serif;
             font-weight: 500;
             color: #FAAB78;
         }
 
         .delete-pantry-item {
-            font-size: 2vw;
+            font-size: 2rem;
             color: #FAAB78;
             transition: all 0.1s ease-in-out;
         }
@@ -41,30 +43,3 @@
     }
 }
 
-
-@media screen and (max-width: 480px) {
-    .inside-pantry-container {
-    
-        .pantry-items {
-            padding: 2vw 4vw;
-    
-            span {
-                font-size: 8vw;
-            }
-    
-            .delete-pantry-item {
-                font-size: 8vw;
-                margin-left: 2vw;
-            }
-    
-            .delete-pantry-item:hover {
-                transform: scale(1.1);
-                color: #90F1B7;
-                cursor: pointer;
-            }
-            
-    
-    
-        }
-    }
-}

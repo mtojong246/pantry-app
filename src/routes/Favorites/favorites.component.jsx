@@ -93,9 +93,8 @@ const Favorites = () => {
         ) : (
             <>
             {favorites.length === 0 ? (
-                <div className='empty-message-favorites-container'>
-                    <FontAwesomeIcon icon={faUtensils} id='utensils'/>
-                    <span>Your favorites page is empty.</span>
+                <div className='empty-message-favorites-container'>   
+                    <span><FontAwesomeIcon icon={faUtensils} id='utensils'/>Your favorites page is empty.</span>
                 </div>
             ) : (
                 <div className='favorites-list-container'>

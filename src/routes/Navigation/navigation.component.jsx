@@ -34,7 +34,7 @@ const Navigation = () => {
     
 
     return (
-        <div className='page-container'>
+        <>
             <div className='nav-bar-container'>
                 <span className='logo' onClick={home}>Pantry.</span>
                 <div className='nav-bar'>
@@ -50,7 +50,7 @@ const Navigation = () => {
             </div>
             <Outlet />
             <Footer />
-        </div>
+        </>
     )
 }
 

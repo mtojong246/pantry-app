@@ -89,7 +89,7 @@ const RecipePage = () => {
             <Spinner />
         ) : (
             <div className='recipe-page-container'>
-                <div className='recipe-title-container'>
+                <div className='recipe-page-title-container'>
                     <span>{recipe[0].recipe.label}</span>
                     <button onClick={favorite} value={recipe[0].recipe.label}>{favorites.filter(favorite => favorite.name === recipe[0].recipe.label).length === 0 ? (<img src={EmptyHeart} alt='empty-heart' className='recipe-favorite'/>) : (<img src={FilledHeart} alt='filled-heart' className='recipe-favorite'/>)}</button>
                 </div>

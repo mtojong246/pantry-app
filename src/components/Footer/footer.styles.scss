@@ -3,16 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3vh 0;
+    padding: 2rem 0;
+    width: 100vw;
 }
 
 .media-container {
     display: flex;
-    gap: 1vw;
+    gap: 1rem;
 
 
     hr {
-        width: 10vw;
+        width: 5rem;
         height: 0px;
         border: 1px solid white;
 
@@ -25,8 +26,8 @@
     }
 
     .brand {
-        height: 2vw;
-        width: 2vw;
+        height: 2rem;
+        width: 2rem;
         color: white;
     }
 
@@ -40,17 +41,16 @@
 
 
 @media only screen and (max-width: 480px) {
-    .footer-container {
-        padding: 5vw 0;
-    }
-    
     .media-container {
-        gap: 3vw;
-        
-    
-        .brand {
-            height: 10vw;
-            width: 10vw;
+        display: flex;
+        gap: 1rem;
+
+
+        hr {
+            width: 1rem;
+            height: 0px;
+            border: 1px solid white;
+
         }
     }
 }

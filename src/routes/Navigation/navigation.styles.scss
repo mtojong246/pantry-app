@@ -1,23 +1,17 @@
-.page-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .nav-bar-container {
     background-color: #FFDCA9;
     color: #FAAB78;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 0;
+    padding: 1rem;
 }
 
 .logo {
-    font-size: 4vw;
+    font-size: 4rem;
     font-family: 'Archivo', sans-serif;
     font-weight: 900;
     position: relative;
-    left: 1vw;
     transition: all 0.1s ease-in;
 }
 
@@ -28,15 +22,15 @@
 }
 
 .nav-bar {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Inter', sans-serif; 
     font-weight: 700;
     display: flex;
-    justify-content: space-between;
-    margin-right: 10vw;
+    justify-content: center;
+    margin-right: 10rem;
     align-items: center;
+    gap: 1.5rem;
     
-    width: 35vw;
 
     span {
         transition: all 0.1s ease-in;
@@ -50,11 +44,10 @@
 }
 
 .gear {
-    height: 2vw;
-    width: 2vw; 
+    height: 2rem;
+    width: 2rem; 
     color: #FAAB78;
     position: relative;
-    right: 1vw;
     transition: all 0.1s ease-in;
     z-index: 1;
 }
@@ -67,8 +60,8 @@
 
 .bars {
     display: none;
-    height: 2.75vh;
-    width: 2.75vh; 
+    height: 2rem;
+    width: 2rem; 
     color: #FAAB78;
     position: relative;
     right: 20px;
@@ -84,53 +77,26 @@
 
 .settings {
     position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    top: 0;
+    top: 6rem;
+    right: 0;
 }
 
-@media only screen and (max-width: 786px) {
-    .logo {
-        font-size: 4vh;
-        z-index: 2;
-    }
-
-    .nav-bar {
-        font-size: 1.75vh;
-    }
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1000px) {
     .nav-bar {
         display: none;
     }
 
     .bars {
         display: block;
-        height: 12vw;
-        width: 12vw;
     }
 
     .gear {
         display: none;
-    }
+    }   
+}
 
-    .nav-bar-container {
-        padding: 8vw 0;
-    }
-    
-    .logo {
-        font-size: 18vw;
-    }
-    
-    .logo:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-        color: #90F1B7;
-    }
-    
-    
+@media only screen and (max-width: 480px) {
+
     .settings {
         z-index: 1;
     }

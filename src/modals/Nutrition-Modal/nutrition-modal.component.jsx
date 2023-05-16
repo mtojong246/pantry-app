@@ -51,16 +51,16 @@ const NutritionModal = ({ nutritionModal, toggleNutritionModal }) => {
                             </div>
                             <form onSubmit={onSubmitHandler}>
                                 <div className='nutrition-values'>
+                                    <div className='individual-values-container'>
                                     {nutritionQuantities.map(value => (
                                         <div className='individual-values'>
                                             <span>{value[0]}</span>
                                             <span><input type='text' name={value[0]} defaultValue={nutritionValues[0][value[0]]}/><span>{value[1]}</span></span>
                                         </div>
                                     ))}
-                                    <button type='button' onClick={() => toggleResetModal()}>Reset</button>
-                                </div>
-                                <div className='nutrition-values-set'>
-                                    <button>Set Values</button>
+                                    </div>
+                                    <button type='button' onClick={() => toggleResetModal()} id='reset'>Reset</button>
+                                    <button id='set-values'>Set Values</button>
                                 </div>
                             </form>
                         </div>

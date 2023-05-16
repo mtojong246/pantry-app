@@ -1,22 +1,26 @@
 .empty-message-favorites-container {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     color: #939393;
-    font-size: 4vw;
+    font-size: 4rem;
+
+    #utensils {
+        margin-right: 1rem;
+    }
 
     span {
-        margin-left: 3vh;
+        text-align: center;
     }
 }
 
 
 .favorites-list-container {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -27,31 +31,29 @@
         background-color: #FAAB78;
         border: 1px solid #FAAB78;
         width: 100vw;
-        margin-bottom: 2.5vh;
         margin-top: 0;
     }
 }
 
 .favorites-title {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
 
     span {
-        font-size: 5vw;
+        font-size: 4rem;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         color: #FAAB78;
     }
 
     select {
-        width: 20vw;
-        font-size: 2vw;
+        width: 20rem;
+        font-size: 2rem;
         color: #666666;
         border-color: #666666;
-        margin-right: 1vw;
     }
 }
 
@@ -59,16 +61,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill, 1fr);
-    gap: 3vh;
-    max-height: 65vh;
+    gap: 3rem;
+    margin: 3rem 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 3rem;
     overflow-y: scroll;
 }
 
 .favorite-recipes {
-    width: 30vw;
+    width: 100%;
     border: 5px solid #F19090;
     border-radius: 10px;
-    padding: 0.5vw;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,22 +81,22 @@
 }
 
 .favorite-recipe-title {
-    width: 30vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
     span {
-        font-size: 3vw;
+        font-size: 3rem;
         color: #F19090;
         font-weight: 500;
-        width: 25vw;
+        width: 70%;
     }
 
     button {
-        font-size: 1.5vw;
-        height: 4vw;
-        padding: 0 1vw;
+        font-size: 1.5rem;
+        height: 4rem;
+        padding: 0 1rem;
         background-color: #F19090;
         color: white;
         border: 3px solid #F19090;
@@ -107,7 +112,7 @@
 }
 
 .favorite-heart {
-    width: 30vw;
+    width: 100%;
     text-align: right;
 
     button {
@@ -117,6 +122,8 @@
 
     img {
         filter: invert(78%) sepia(11%) saturate(2957%) hue-rotate(307deg) brightness(101%) contrast(88%);
+        width: 3rem;
+        height: 3rem;
     }
 
     img:hover {
@@ -124,91 +131,38 @@
     }
 }
 
-@media  only screen and (max-width: 768px) {
+@media  only screen and (max-width: 780px) {
+    .favorite-recipes-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
     .favorites-title {
-        span {
-            font-size: 6vh;
+            
+        select {
+            width: 10rem;
+            font-size: 2rem;
+            color: #666666;
+            border-color: #666666;
         }
     }
 }
 
-@media  only screen and (max-width: 480px) {
-    .empty-message-favorites-container {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        color: #939393;
-        font-size: 5vh;
-    
-        span {
-            margin-left: 3vh;
-        }
-    }
-    
-    
+@media  only screen and (max-width: 580px) {    
+        
     .favorites-title {
-        width: 98%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1vh;
-    
         span {
-            font-size: 7vh;
-        }
-    
-        select {
-            width: 20vw;
-            font-size: 7vw;
-        }
-    }
-    
-    .favorite-recipes-container {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
-        margin: 3vh 0 5vh 0;
-    }
-    
-    .favorite-recipes {
-        width: 80vw;
-    }
-    
-    .favorite-recipe-title {
-        width: 80vw;
-        display: flex;
-    
-        span {
-            font-size: 10vw;
-            width: 60vw;
-        }
-    
-        button {
-            font-size: 8vw;
-            padding: 0.5vh 3vw;
+            font-size: 3rem;
         }
 
-    }
-    
-    .favorite-heart {
-        width: 80vw;
-        text-align: right;
-    
-        button {
-            background-color: white;
-            border: none;
-        }
-    
-        img {
-            filter: invert(78%) sepia(11%) saturate(2957%) hue-rotate(307deg) brightness(101%) contrast(88%);
-            width: 12vw;
-            height: 12vw;
-        }
-    
-        img:hover {
-            cursor: pointer;
+        select {
+            width: 5rem;
+            font-size: 2rem;
+            color: #666666;
+            border-color: #666666;
         }
     }
+    
+
 }

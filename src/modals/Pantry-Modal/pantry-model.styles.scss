@@ -23,20 +23,23 @@
 .pantry-modal-content {
     position: relative;
     z-index: 4;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
 }
 
 
 .pantry-search-container {
     background: white;
     border-radius: 10px;
-    width: 60vw;
-    padding-bottom: 3vh;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .pantry-search-title {
-    width: 100%;
     background-color: #FAAB78;
-    padding: 2vh 0;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,15 +48,13 @@
 
     span {
         font-family: "Inter", sans-serif;
-        font-size: 3vw;
+        font-size: 3rem;
         font-weight: 400;
-        padding-left: 1vw;
     }
 
     .exit-pantry {
-        height: 3vw;
-        width: 3vw;
-        padding-right: 1vw;
+        height: 3rem;
+        width: 3rem;
         transition: all 0.1s ease-in-out;
     }
 
@@ -65,22 +66,21 @@
 }
 
 .pantry-search-bar {
-    margin-top: 2vw;
+    margin: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5vw;
-    padding: 0 1vw;
+    gap: 1rem;
 
     button {
-        padding: 1vw;
+        padding: 1rem;
         border: 3px solid #FAAB78;
         border-radius: 10px;
         background-color: white;
 
         .pantry-search-button {
-            height: 2vw;
-            width: 2vw;
+            height: 2rem;
+            width: 2rem;
             color: #FAAB78;
         }
     }
@@ -96,11 +96,11 @@
     }
 
     input {
-        padding: 1vw;
-        width: 83.5%;
+        padding: 1rem;
+        width: 100%;
         border: 3px solid #FAAB78;
         border-radius: 10px;
-        font-size: 2vw;
+        font-size: 2rem;
     }
 }
 
@@ -119,24 +119,24 @@
 
 
 .pantry-search-results-container {
-    margin-top: 2vw;
-    height: 50vh;
+    margin: 1rem;
     font-family: "Inter", sans-serif;
+    height: 100%;
     overflow-y: scroll;
-    padding: 0 0.5vw;
+
 
     .pantry-search-results-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2vw;
+        gap: 1rem;
         
     }
 
     .pantry-search-results {
-        padding: 1vw;
-        width: 92%;       
+        padding: 1rem;
+        width: 100%;       
         border: 3px solid #FAAB78;
         border-radius: 10px;
         display: flex;
@@ -144,17 +144,17 @@
         align-items: center;
 
         span {
-            font-size: 2vw;
+            font-size: 2rem;
             color: #FAAB78;
         }
         
         button {
-            padding: 0.5vw 1vw;
+            padding: 0.5rem 1rem;
             border-radius: 10px;
             color: white;
             border: 2px solid #FAAB78;
             background-color: #FAAB78; 
-            font-size: 2vw;
+            font-size: 2rem;
         }
 
         button:hover {
@@ -170,74 +170,15 @@
 }
 
 @media screen and (max-width: 480px) {
-    .pantry-modal-container, .pantry-modal-overlay {
+    .pantry-modal-container {
+        padding: 4rem 2rem;
+    }
+
+    .pantry-modal-content {
+        position: relative;
+        z-index: 4;
+        width: 100%;
         height: 100%;
-    }
-
-    
-    .pantry-search-container {
-        width: 90vw;
-        height: 70vh;
-    }
-    
-    .pantry-search-title {
-    
-        span {
-            padding: 2vh;
-            font-size: 10vw;
-        }
-    
-        .exit-pantry {
-            height: 10vw;
-            width: 10vw;
-            padding-right: 2vh;
-        }
-
-    }
-    
-    .pantry-search-bar {
-        margin-top: 3vh;
-        gap: 2vw;
-    
-        button {
-    
-            .pantry-search-button {
-                height: 7vw;
-                width: 7vw;
-                padding: 1vh;
-            }
-        }
-    
-        input {
-            width: 60vw;
-            height: 6vh;
-            font-size: 8vw;
-        }
-    }
-    
-    
-    .pantry-search-results-container {
-        margin-top: 3vh;
-        height: 35vh;
-    
-        .pantry-search-results-box {
-            gap: 5vh;
-            
-        }
-    
-        .pantry-search-results {
-            width: 76vw;
-            padding: 15px;
-    
-            span {
-                font-size: 8vw;
-            }
-            
-            button {
-                font-size: 5vw;
-                padding: 2vw 5vw;
-            }
-
-        }
+        overflow: hidden;
     }
 }

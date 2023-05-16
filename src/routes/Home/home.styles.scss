@@ -3,15 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    min-height: 90vh;
+    width: 100vw;
+    padding: 5rem 2rem;
 }
 
 .outside-pantry {
-    
-
+    width: 70%;
     label {
         align-self: flex-start;
-        font-size: 3vw;
+        font-size: 3rem;
         font-family: 'Archivo', sans-serif;
         font-weight: 900;
         color: #FAAB78;
@@ -19,9 +20,9 @@
 }
 
 .inside-pantry {
-    margin: 10px 0 25px 0;
-    width: 70vw;
-    height: 50vh;
+    margin-top: 10px;
+    width: 100%;
+    height: 600px;
     border: 7px solid #FAAB78;
     border-radius: 20px;
     display: flex;
@@ -35,8 +36,8 @@
     
 
     img {
-        height: 8vw;
-        width: 8vw;
+        height: 8rem;
+        width: 8rem;
         margin-bottom: 10px;
         filter: invert(69%) sepia(55%) saturate(427%) hue-rotate(333deg) brightness(100%) contrast(97%);
     }
@@ -45,7 +46,7 @@
     span {
         display: block;
         color: #FAAB78;
-        font-size: 2vw;
+        font-size: 2rem;
         font-weight: 600;
     }
 }
@@ -72,12 +73,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3.25vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    width: 70%;
 
 
     button {
-        font-size: 2vw;
-        padding: 1.5vh 1.5vw;
+        font-size: 2rem;
+        padding: 0.5rem 2rem;
         border-radius: 15px;
         border: 3px solid #FAAB78;
         color: #FAAB78;
@@ -105,76 +110,20 @@
 
 .pantry-message {
     p {
-        font-size: 2vw;
+        font-size: 2rem;
         font-family: 'Archivo', sans-serif;
         font-weight: 900;
         color: #90F1B7;
         text-align: center;
-        width: 70vw;
         margin-top: 0;
     }
 }
 
 
 
-@media only screen and (max-width: 786px) {
-
-    .add-food {
-        img {
-            height: 9vh;
-            width: 9vh;
-        }
-
-        span {
-            font-size: 2vh;
-        }
-    }
-
-    .pantry-message {
-        p {
-            font-size: 2.5vh;
-            width: 40vw;
-        }
-    }
-}
-
 @media only screen and (max-width: 480px) {
-    .pantry-container {
-        margin: 10vh 0;
-    }
-    
-    .outside-pantry {
-        margin: 10vw;
-
-        label {
-            font-size: 10vw;
-        }
-    }
-    
-    .inside-pantry {
-        margin: 10px 0 25px 0;
-        width: 70vw;
-        height: 50vh;
-        border: 7px solid #FAAB78;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    .add-food {
-        
-    
-        img {
-            height: 30vw;
-            width: 30vw;
-        }
-    
-    
-        span {
-            font-size: 8vw;
-        }
+    .outside-pantry, .pantry-buttons-container {
+        width: 100%;
     }
        
     
@@ -183,27 +132,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 5vh;
-        margin-bottom: 5vh;    
-    
-        button {
-            font-size: 7vw;
-            padding: 2vh 3vw;
-        }
-    
-    }
-    
-    
-    .pantry-message {
-        p {
-            font-size: 3vh;
-            font-family: 'Archivo', sans-serif;
-            font-weight: 900;
-            color: #90F1B7;
-            text-align: center;
-            width: 80vw;
-            margin-bottom: 4vw;
-        }
-    }
-    
+        gap: 3rem;    
+    }   
 }

@@ -19,18 +19,23 @@
     background: rgba(49,49,49,0.8);
 }
 
+.log-quantity-modal-content {
+    width: 50%;
+}
+
 
 .log-quantity-values-container {
     background: white;
     border-radius: 10px;
-    width: 26vw;
+    width: 100%;
     font-family: 'Inter', sans-serif;
-    height: 20vh;
     text-align: center;
+    padding: 1rem;
 
     button {
-        font-size: 3vh;
-        padding: 1vh 8vw;
+        font-size: 2rem;
+        padding: 1rem;
+        width: 100%;
         border-radius: 10px;
         border: 3px solid #90F1B7;
         background-color: white;
@@ -45,18 +50,22 @@
 }
 
 .log-quantity-container {
-    width: 92%;
-    height: 60%;
+    width: 100%;
+    padding-bottom: 1rem;
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1vw;
-    font-size: 4vh;
+    font-size: 2rem;
     color: #666666;
 
     input {
-        font-size: 4vh;
-        width: 5vw;
+        font-size: 2rem;
+        width: 3rem;
+    }
+
+    span {
+        text-align: left;
     }
 }
 
@@ -75,37 +84,12 @@
   }
 
 
-@media screen and (max-width: 480px) {
-    .log-quantity-modal-container, .log-quantity-modal-overlay {
-        height: 100%
+  @media screen and (max-width: 480px) {
+    .log-quantity-modal-container {
+        padding: 0 2rem;
     }
-    
-    
-    .log-quantity-values-container {
-        width: 90vw;
-        padding: 1vh;
-    
-        button {
-            font-size: 10vw;
-        }
-    
+
+    .log-quantity-modal-content {
+        width: 100%;
     }
-    
-    .log-quantity-container {
-        width: 92%;
-        height: 60%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1vw;
-        font-size: 10vw;
-        color: #666666;
-    
-        input {
-            font-size: 10vw;
-            width: 10vw;
-        }
-    }
-    
-    
-}
+  }

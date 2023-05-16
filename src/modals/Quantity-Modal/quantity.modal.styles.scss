@@ -19,17 +19,22 @@
     background: rgba(49,49,49,0.8);
 }
 
+.quantity-modal-content {
+    width: 50%;
+}
 
 .quantity-values-container {
     background: white;
     border-radius: 10px;
-    padding: 1vh;
+    padding: 1rem;
     font-family: 'Inter', sans-serif;
     text-align: center;
+    width: 100%;
 
     button {
-        font-size: 3vh;
-        padding: 1vh 8vw;
+        font-size: 2rem;
+        padding: 1rem;
+        width: 100%;
         border-radius: 10px;
         border: 3px solid #90F1B7;
         background-color: white;
@@ -44,17 +49,22 @@
 }
 
 .quantity-container {
-    width: 92%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
-    font-size: 4vh;
+    gap: 1rem;
+    font-size: 2rem;
     color: #666666;
+    padding-bottom: 1rem;
 
     input {
-        font-size: 4vh;
-        width: 5vw;
+        font-size: 2rem;
+        width: 3rem;
+    }
+
+    span {
+        text-align: left;
     }
 }
 
@@ -73,33 +83,11 @@
   }
 
   @media screen and (max-width: 480px) {
-    .quantity-modal-container, .quantity-modal-overlay {
-        height: 100%;
+    .quantity-modal-container {
+        padding: 0 2rem;
     }
-    
-    
-    .quantity-values-container {
-        width: 90vw;
-    
-        button {
-            font-size: 10vw;
-            padding: 1vh 8vw;
-        }
-    }
-    
-    .quantity-container {
-        width: 90vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1vw;
-        font-size: 10vw;
-        color: #666666;
-        margin-bottom: 4vh;
-    
-        input {
-            font-size: 10vw;
-            width: 15vw;
-        }
+
+    .quantity-modal-content {
+        width: 100%;
     }
   }

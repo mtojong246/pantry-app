@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    margin-bottom: 2.9vh;
+    margin-top: 3rem;
+    width: 100%;
+    gap: 3rem;
 }
 
 .food-log-categories {
-    margin-bottom: 6vh;
-    width: 40vw;
+    width: 100%;
 }
 
 .food-category-box {
@@ -18,18 +18,18 @@
     align-items: center;
     background-color: #FAAB78;
     border: 3px solid #FAAB78;
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Archivo', sans-serif;
     font-weight: 800;
     color: #FFDB5A;
-    padding: 0.5vw;
+    padding: 1rem;
 }
 
 .add-food-box {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0.5vw;
+    padding: 1rem;
     border: 3px solid #FAAB78;
     color: #FAAB78;
     border-top: none;
@@ -39,17 +39,17 @@
         background-color: white;
         color: #FAAB78;
         border: none;
-        font-size: 2vw;
+        font-size: 2rem;
         font-family: 'Inter', sans-serif;
     }
 
     img {
-        height: 2vw;
-        width: 2vw;
+        height: 2rem;
+        width: 2rem;
         margin-left: 0.75vh;
         filter: invert(69%) sepia(55%) saturate(427%) hue-rotate(333deg) brightness(100%) contrast(97%);
         position: relative;
-        top: 0.25vw;
+        top: 5px;
         transition: all 0.1s ease-in-out;
     }
 
@@ -80,25 +80,20 @@
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    width: 100%;
 }
 
 .food-item {
     border: 3px solid #FAAB78;
-    padding: 0.5vw 0;
-    font-size: 2vw;
+    padding: 1rem;
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     border-top: none;
-    width: 99%;
-
-    span {
-        margin-left: 1vw;
-    }
-}
-
-.remove-from-log {
-    margin-right: 1vw;
+    width: 100%;
+    text-align: left;
 }
 
 .remove-from-log:hover {
@@ -110,86 +105,11 @@
 #food-item-quantity {
     background-color: white;
     border: none;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 #food-item-quantity:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.1s ease-in-out;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .food-log-categories {
-        width: 80vw;
-    }
-
-    .food-category-box {
-        font-size: 2vh;
-    }
-
-    .add-food-box {
-
-        button {
-            font-size: 1.5vh;
-        }
-    }
-
-}
-
-@media only screen and (max-width: 480px) {
-    .food-log-list-container {
-        margin-bottom: 0;
-        width: 85vw;
-    }
-    
-    .food-category-box {
-        font-size: 8vw;
-        padding: 3vw;
-        height: 9vw;
-        border: none;
-    }
-    
-    .add-food-box {
-        border: 1px solid #FAAB78;
-        text-align: right;
-        color: #FAAB78;
-        padding: 3vw;
-        position: relative; 
-        bottom: 2px;
-        margin-right: 0;
-    
-    
-        button {
-            padding-bottom: 10px;
-            background-color: white;
-            color: #FAAB78;
-            border: none;
-            font-size: 8vw;
-            font-family: 'Inter', sans-serif;
-            padding: 0.5vh 0.5vw 1vh 0;
-            position: relative;
-            top: 1px;
-        }
-    
-        img {
-            height: 8vw;
-            width: 8vw;
-        }
-
-    }
-    
-    .food-item {
-        padding: 3vw;
-        font-size: 8vw;
-        width: 91%;
-    }
-    
-    
-    #food-item-quantity {
-        font-size: 8vw;
-    }
-    
-    
 }

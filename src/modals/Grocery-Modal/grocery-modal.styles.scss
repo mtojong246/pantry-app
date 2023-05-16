@@ -23,20 +23,22 @@
 .grocery-modal-content {
     position: relative;
     z-index: 4;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
 }
 
 
 .grocery-search-container {
     background: white;
     border-radius: 10px;
-    width: 60vw;
-    padding-bottom: 3vh;
+    height: 100%;
+    width: 100%;
 }
 
 .grocery-search-title {
-    width: 100%;
     background-color: #FAAB78;
-    padding: 2vh 0;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,15 +47,13 @@
 
     span {
         font-family: "Inter", sans-serif;
-        font-size: 3vw;
+        font-size: 3rem;
         font-weight: 400;
-        padding-left: 1vw;
     }
 
     .exit-grocery {
-        height: 3vw;
-        width: 3vw;
-        padding-right: 1vw;
+        height: 3rem;
+        width: 3rem;
         transition: all 0.1s ease-in-out;
     }
 
@@ -65,22 +65,21 @@
 }
 
 .grocery-search-bar {
-    margin-top: 2vw;
+    margin: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5vw;
-    padding: 0 1vw;
+    gap: 1rem;
 
     button {
-        padding: 1vw;
+        padding: 1rem;
         border: 3px solid #FAAB78;
         border-radius: 10px;
         background-color: white;
 
         .grocery-search-button {
-            height: 2vw;
-            width: 2vw;
+            height: 2rem;
+            width: 2rem;
             color: #FAAB78;
         }
     }
@@ -96,11 +95,11 @@
     }
 
     input {
-        padding: 1vw;
-        width: 83.5%;
+        padding: 1rem;
+        width: 100%;
         border: 3px solid #FAAB78;
         border-radius: 10px;
-        font-size: 2vw;
+        font-size: 2rem;
     }
 }
 
@@ -119,24 +118,23 @@
 
 
 .grocery-search-results-container {
-    margin-top: 2vw;
-    height: 50vh;
+    margin: 1rem;
+    height: 100%;
     font-family: "Inter", sans-serif;
     overflow-y: scroll;
-    padding: 0 0.5vw;
 
     .grocery-search-results-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2vw;
+        gap: 1rem;
         
     }
 
     .grocery-search-results {
-        padding: 1vw;
-        width: 92%;       
+        padding: 1rem;
+        width: 100%;       
         border: 3px solid #FAAB78;
         border-radius: 10px;
         display: flex;
@@ -145,17 +143,17 @@
  
 
         span {
-            font-size: 2vw;
+            font-size: 2rem;
             color: #FAAB78;
         }
         
         button {
-            padding: 0.5vw 1vw;
+            padding: 0.5rem 1rem;
             border-radius: 10px;
             color: white;
             border: 2px solid #FAAB78;
             background-color: #FAAB78; 
-            font-size: 1vw;
+            font-size: 2rem;
         }
 
         button:hover {
@@ -171,77 +169,13 @@
 }
 
 @media screen and (max-width: 480px) {
-    .grocery-modal-container, .grocery-modal-overlay {
+    .grocery-modal-container {
+        padding: 4rem 2rem;
+    }
+
+    .grocery-modal-content {
         height: 100%;
-    }
-    
-    
-    .grocery-search-container {
-        width: 90vw;
-        height: 70vh;
-    }
-    
-    .grocery-search-title {
-    
-        span {
-            padding: 2vh;
-            font-size: 10vw;
-        }
-    
-        .exit-grocery {
-            height: 10vw;
-            width: 10vw;
-            padding-right: 2vh;
-        }
-    
-    }
-    
-    .grocery-search-bar {
-        margin-top: 3vh;
-        gap: 2vw;
+        width: 100%;
 
-    
-        button {
-    
-            .grocery-search-button {
-                height: 7vw;
-                width: 7vw;
-                padding: 1vh;
-            }
-        }
-    
-    
-        input {
-            width: 60vw;
-            height: 6vh;
-            font-size: 8vw;
-        }
-    }
-       
-    
-    .grocery-search-results-container {
-        margin-top: 3vh;
-        height: 35vh;
-    
-        .grocery-search-results-box {
-            gap: 5vh;
-            
-        }
-    
-        .grocery-search-results {
-            width: 76vw;
-            padding: 15px;
-     
-    
-            span {
-                font-size: 8vw;
-            }
-            
-            button {
-                font-size: 5vw;
-                padding: 2vw 5vw;
-            }
-
-        }
     }
 }

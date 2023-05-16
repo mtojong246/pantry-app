@@ -2,58 +2,50 @@
     height: 100vh;
     margin: 0;
     background-color: #FCF9BE;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 3vw;
 }
 
 .title-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translate(0%, -50%);
+    z-index: 1;
 }
 
 .title {
-    font-size: 15vw;
+    font-size: 15rem;
     font-family: 'Archivo', sans-serif;
     font-weight: 900;
     color: #FAAB78;
-    padding-left: 2vh;
 }
 
 .drumstick {
-    font-size: 10vw;
-    margin-left: 1vw;
+    font-size: 10rem;
+    margin-left: 1rem;
 }
 
 .animate__animated.animate__fadeInLeft {
     --animate-duration: 1.5s;
 }
 
-.title, .get-started {
-    position: relative;
-    top: 140px;
-}
 
 .get-started, .title-desc {
-    margin-left: 2vh;
+    margin-left: 1rem;
 }
 
 
 .get-started {
-    font-size: 2vw;
-    padding: 1.5vw 4vw;
+    font-size: 2rem;
+    padding: 1.5rem 4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: #FAAB78;
     border: 3px solid #FAAB78;
     border-radius: 30px;
     background-color: #FFECA9;
-    margin-top: 1vh;
-    z-index: 2;
 }
 
 .get-started:hover {
@@ -63,12 +55,13 @@
 }
 
 .title-desc {
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: #FAAB78;
-    padding-top: 30vh;
-    margin-bottom: 2vh;
+    padding-top: 30rem;
+    position: absolute;
+    bottom: 1rem;
 }
 
 .animate__animated.animate__fadeInUp {
@@ -81,48 +74,88 @@
     --animate-delay: 2s;
 }
 
-@media only screen and (max-width: 480px) {
-    
+@media only screen and (max-width: 1100px) {
     .title {
-        font-size: 18vw;
-        font-family: 'Archivo', sans-serif;
-        font-weight: 900;
-        color: #FAAB78;
-        padding-left: 2vh;
+        font-size: 10rem;
+        margin-left: 0.5rem;
     }
     
     .drumstick {
-        font-size: 16vw;
-        margin-left: 0.5vh;
+        font-size: 8rem;
+        margin-left: 1rem;
     }
-    
     
     
     .get-started {
-        font-size: 8vw;
-        padding: 1.5vw 4vw;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        color: #FAAB78;
-        border: 3px solid #FAAB78;
-        border-radius: 30px;
-        background-color: #FFECA9;
-        margin-top: 1vh;
-        z-index: 2;
-    }
-    
-    .get-started:hover {
-        background-color: #FAAB78;
-        color: #FFECA9;
-        cursor: pointer;
+        font-size: 2rem;
+        padding: 1rem 3rem;
     }
     
     .title-desc {
-        font-size: 6vw;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        color: #FAAB78;
-        padding-top: 20vh;
-        padding-bottom: 1vh;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 6rem;
+        margin-left: 0.75rem;
+    }
+    
+    .drumstick {
+        font-size: 5rem;
+        margin-left: 1rem;
+    }
+    
+    
+    .get-started {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+    
+    .title-desc {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 6rem;
+        margin-left: 0.75rem;
+    }
+    
+    .drumstick {
+        display: none;
+    }
+    
+    
+    .get-started {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+    
+    .title-desc {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .title {
+        font-size: 5rem;
+        margin-left: 0.75rem;
+    }
+    
+    .drumstick {
+        display: none;
+    }
+    
+    
+    .get-started {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    
+    .title-desc {
+        font-size: 1.5rem;
     }
 }

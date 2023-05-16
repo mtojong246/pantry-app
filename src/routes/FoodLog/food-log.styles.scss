@@ -1,14 +1,14 @@
 .food-log-container {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
-    gap: 3vw;
-    margin: 5vh 0;
+    margin: 5rem 0;
 
 
     .food-log-title {
         font-family: 'Archivo', sans-serif;
-        font-size: 4vw;
+        font-size: 4rem;
         font-weight: 600;
         color: #FAAB78;
  
@@ -16,28 +16,27 @@
 
     .nutrition-details-title {
         font-family: 'Archivo', sans-serif;
-        font-size: 4vw;
+        font-size: 4rem;
         font-weight: 600;
         color: #FAAB78;
     }
 
 }
 
-
-.nutrition-details {
-    grid-row: 1 / span(2);
-    padding-left: 4vw;
-    
+.food-log, .nutrition-details {
+    width: 40%;
 }
+
 
 .edit-nutrition-details {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     button {
-        font-size: 1vw;
-        margin-left: 1vw;
-        padding: 1vw 2vw;
+        font-size: 1rem;
+        margin-left: 1rem;
+        padding: 0.5rem;
         color: #FAAB78;
         background-color: white;
         border: 1px solid #FAAB78;
@@ -51,31 +50,18 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .food-log-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 3vw;
-        margin: 10vw 0;
-        
-
-    
-        .food-log-title {
-            font-size: 15vw;   
-        }
-    
-        .nutrition-details-title {
-            font-size: 15vw;
-        }
+        gap: 5rem;
+        padding: 0 2rem;
     
     }
-    
-    .edit-nutrition-details {
-        button {
-            padding: 0.75vh 3vw;
-            font-size: 5vw;
-        }   
+
+    .food-log, .nutrition-details {
+        width: 100%;
     }
 }

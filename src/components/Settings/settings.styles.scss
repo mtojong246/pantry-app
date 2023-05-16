@@ -1,16 +1,16 @@
 .settings-container {
     background-color: #FFDCA9;
-    padding: 8vw 2vw 3vw 2vw;
+    padding: 2rem;
     font-family: 'Inter', sans-serif;
     color: #FAAB78;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2vh;
+    gap: 2rem;
 
     span {
-        font-size: 3vw;
+        font-size: 3rem;
         font-weight: 500;
 
     }
@@ -24,21 +24,6 @@
     display: none;
 }
 
-.themes-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2vh;
-
-    img {
-        height: 5vh;
-        width: 5vh;
-    }
-
-    img:hover {
-        cursor: pointer;
-    }
-}
 
 .option:hover {
     cursor: pointer;
@@ -52,28 +37,6 @@
 
 
 @media only screen and (max-width: 480px) {
-    .settings-container {
-        padding: 18vh 5vw 5vw 5vw;
-        gap: 8vw;
-
-        span {
-            font-size: 8vw;
-        }
-
-        hr {
-            display: block;
-            width: 100%;
-            height: 0;
-            border-bottom: 1px;
-        }
-    }
-
-    .themes-container {
-        img {
-            height: 4.5vh;
-            width: 4.5vh;
-        }
-    }
 
     .mobile {
         display: block;
@@ -83,9 +46,11 @@
         text-decoration: underline;
         cursor: pointer;
     }
+
+    .settings-container {
+        span {
+            font-size: 2.5rem;
+        }
+    }
 }
 
-.dark {
-    background-color: #333;
-    color: #fff;
-}

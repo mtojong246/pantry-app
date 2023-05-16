@@ -24,7 +24,6 @@ const Title = () => {
 
     return (
         <div className='title-page'>
-            <div className='space'></div>
             <div className='title-box'>
                 <span className='title animate__animated animate__fadeInLeft'>Pantry.<FontAwesomeIcon icon={faDrumstickBite} className='drumstick animate__animated animate__tada'/></span>
                 <Link to='/login'>
